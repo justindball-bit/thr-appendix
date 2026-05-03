@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: auto; overflow: visible; }
+  body { background: #ffffff; color: #0f0f0f; font-family: Roboto, Arial, sans-serif; padding: 24px; }
+
+  .subreddit-header { margin-bottom: 8px; }
+  .subreddit-name { font-size: 24px; font-weight: 700; color: #0f0f0f; }
+  .subreddit-sub { font-size: 16px; color: #666; margin-bottom: 4px; }
+  .post-title { font-size: 20px; font-weight: 600; color: #0f0f0f; margin-bottom: 4px; }
+  .post-meta { font-size: 15px; color: #666; margin-bottom: 28px; border-bottom: 1px solid #e0e0e0; padding-bottom: 16px; }
+
+  .pinned-box { background: #f6f7f8; border-left: 4px solid #0079d3; padding: 16px; margin-bottom: 28px; border-radius: 4px; }
+  .pinned-label { font-size: 13px; color: #0079d3; font-weight: 600; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .pinned-text { font-size: 17px; color: #0f0f0f; line-height: 1.6; }
+
+  .comment { display: flex; gap: 12px; margin-bottom: 20px; }
+  .comment.reply { margin-left: 40px; margin-bottom: 12px; }
+  .comment.reply-2 { margin-left: 80px; margin-bottom: 12px; }
+
+  .reddit-avatar { width: 32px; height: 32px; border-radius: 50%; background: #edeff1; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; color: #0f0f0f; flex-shrink: 0; text-transform: uppercase; }
+
+  .comment-body { flex: 1; }
+  .comment-meta { display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px; }
+  .username { font-size: 15px; font-weight: 700; color: #0079d3; }
+  .username.special { color: #ff4500; }
+  .timestamp { font-size: 14px; color: #878a8c; }
+  .comment-text { font-size: 17px; color: #1c1c1c; line-height: 1.7; margin-bottom: 8px; }
+  .comment-actions { display: flex; align-items: center; gap: 16px; }
+  .upvotes { font-size: 15px; font-weight: 600; color: #0f0f0f; }
+  .action { font-size: 14px; color: #878a8c; cursor: pointer; font-weight: 600; }
+
+  .thread-break { border-top: 2px solid #edeff1; margin: 28px 0; }
+  .thread-note { font-size: 17px; color: #555; font-style: italic; margin: 20px 0; line-height: 1.7; }
+  .thread-explosion { font-size: 19px; font-weight: 600; color: #0f0f0f; margin: 20px 0; text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="subreddit-header">
+  <div class="subreddit-name">r/DBCooperIdentified</div>
+  <div class="subreddit-sub">Subreddit created 6 hours after the video dropped · 1.2 million members in 48 hours</div>
+</div>
+
+<div class="post-title">[MEGATHREAD] Coordinating the identification effort - READ BEFORE POSTING</div>
+<div class="post-meta">Posted by u/CascadeDropZone_Mod · Pinned by moderators</div>
+
+<div class="pinned-box">
+  <div class="pinned-label">📌 Pinned</div>
+  <div class="pinned-text">We are organizing the identification effort here. No individual threads until we have something concrete. Post your findings in this thread only. Read everything before contributing. Do not contact anyone. Do not post personal information. We find him first. We verify thoroughly. We do this right.<br><br>
+  What we have to work with from the footage: Male. Approximately 45-55 years old in 1971. Medium height. Medium build. Brown hair going grey at the temples. Clean shaven. Small scar on the left hand between the thumb and index finger. He knew aircraft — specifically the 727 rear airstair mechanism, not public knowledge. He knew parachutes. He was calm in a way that suggests extensive training in high stress situations. His suit was off the rack but well maintained. His shoes were resoled. He tipped.<br><br>
+  Let's go.</div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/SkyjackStudies</span><span class="timestamp">5 hours ago</span></div>
+    <div class="comment-text">Starting with the parachute knowledge. This is military or sport jumping. The way he evaluated the chutes, the harness check, the deployment handle verification, that's trained behavior. Checking military jump records 1945-1965. Will report back.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 4,567</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">N</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/NorthwestArchive_Dee</span><span class="timestamp">4 hours ago</span></div>
+    <div class="comment-text">Portland Oregon 1971. He bought the ticket with cash and knew the flight schedule without consulting a board or asking the agent. He knew Flight 305 departed at 3:05. He knew seat 18C was rear aisle. He researched this flight specifically. Pulling Portland area residents with aviation connections from that period.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 3,456</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">H</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/HandwritingAnalyst_Pro</span><span class="timestamp">4 hours ago</span></div>
+    <div class="comment-text">The note. We don't see the full text but we see him fold it. Left handed fold. He is left handed or ambidextrous. Narrows things slightly.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 2,345</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/CascadeDropZone_Mod</span><span class="timestamp">4 hours ago</span></div>
+    <div class="comment-text">Good catch. Confirmed left handed from the parachute examination sequence. He uses his left hand to check the deployment handle.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 1,234</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">M</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/MilitaryRecords_Digger</span><span class="timestamp">3 hours ago</span></div>
+    <div class="comment-text">OSS and early CIA recruited heavily from the Pacific Northwest in the late 1940s. Men with parachute training, composure under pressure, familiarity with improvised equipment. Not saying he was intelligence. Saying the profile fits men who were. Cross referencing Pacific Northwest enlistment records 1942-1950.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 5,678</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/TemporalMechanics_PhD</span><span class="timestamp">3 hours ago</span></div>
+    <div class="comment-text">I've been thinking the same thing since the video dropped. The composure isn't learned in a classroom. That's operational composure. He's done high stress things before.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 4,567</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">F</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/FacialComposite_Compare</span><span class="timestamp">2 hours ago</span></div>
+    <div class="comment-text">Running the footage against the two existing FBI composites. The 1971 composite is closer than the 1972 revision. Whoever did the 1972 revision made him younger and softer. The footage face is harder. More angular through the jaw. Narrowing age estimate to 48-54 in 1971. Born 1917-1923.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 6,789</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">N</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/NorthwestArchive_Dee</span><span class="timestamp">2 hours ago</span></div>
+    <div class="comment-text">Update. Cross referencing Portland area men born 1917-1923 with military service and aviation or parachute training. This is a large list. Filtering for men with connections to commercial aviation specifically. The 727 airstair knowledge is the key detail. That information was in Boeing technical documents not available to the public. He either worked for Boeing, Northwest Orient, the FAA, or had a contact who did.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 7,890</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/CascadeDropZone_Mod</span><span class="timestamp">2 hours ago</span></div>
+    <div class="comment-text">This is the thread to pull. Aviation industry connections. Someone knew that plane.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 5,678</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/PortlandNewspaperArchive</span><span class="timestamp">1 hour ago</span></div>
+    <div class="comment-text">Going through Portland Oregonian archives 1965-1971. Looking for men matching the profile. Aviation industry. Military background. Any legal trouble, financial trouble, anything that might explain motivation. The $200,000 in 1971 is approximately $1.5 million today. Not retirement money but significant. He needed something specific. Debt maybe. Medical bills. Something with a number attached.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 3,456</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/PhilosophyBro_Actually</span><span class="timestamp">1 hour ago</span></div>
+    <div class="comment-text">The careful suit. The resoled shoes. The cash for everything. This isn't a wealthy man's crime. This is a man who needed a specific amount of money for a specific reason.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 5,678</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">B</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/BoeingEmployee_Retired_PNW</span><span class="timestamp">47 minutes ago</span></div>
+    <div class="comment-text">I worked for Boeing from 1968 to 2003. I want to be careful here because I'm not making an accusation. But the 727 airstair knowledge. We discussed this internally after the hijacking in 1971. The list of people who knew that door could be opened in flight was not long. Mostly Boeing engineers and certain airline maintenance personnel. I'm going to go through my memory carefully and post what I can verify.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 12,345</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/CascadeDropZone_Mod</span><span class="timestamp">46 minutes ago</span></div>
+    <div class="comment-text">Please take your time. Verify everything before posting. This could be significant.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 8,901</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">N</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/NorthwestArchive_Dee</span><span class="timestamp">32 minutes ago</span></div>
+    <div class="comment-text">I think I have something.<br><br>Cross referencing the aviation connection with the military records with the Portland area residence requirement produced a list of 23 men.<br><br>Of those 23, eleven are confirmed deceased before 1971.<br><br>Of the remaining twelve, three have no traceable record after 1972.<br><br>One of those three had a connection to Northwest Orient as a contracted maintenance consultant in 1969 and 1970.<br><br>His name is Robert Calvin Raines.<br><br>I need help verifying.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 23,456</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="thread-explosion">⚡ ALL HANDS ON ROBERT CALVIN RAINES</div>
+
+<div class="comment">
+  <div class="reddit-avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/CascadeDropZone_Mod</span><span class="timestamp">28 minutes ago</span></div>
+    <div class="comment-text">ALL HANDS ON ROBERT CALVIN RAINES. Do not post personal information. Verify only. Report findings here.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 15,678</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">M</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/MilitaryRecords_Digger</span><span class="timestamp">24 minutes ago</span></div>
+    <div class="comment-text">Robert Calvin Raines. Born September 3rd 1919. Portland Oregon. Enlisted US Army 1942. Assigned 511th Parachute Infantry Regiment. Combat jumps. Philippines campaign. Honorably discharged 1946. This man jumped out of planes in combat.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 34,567</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/SkyjackStudies</span><span class="timestamp">21 minutes ago</span></div>
+    <div class="comment-text">511th PIR. That's 11th Airborne Division. These men were elite. Combat jumpers in the Pacific theater. The composure in that video just got explained.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 28,901</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/PortlandNewspaperArchive</span><span class="timestamp">18 minutes ago</span></div>
+    <div class="comment-text">Found him in the Oregonian. Robert Calvin Raines. 1968. Small item. Bankruptcy filing. A machine parts business that didn't make it. He owed $180,000 at the time of filing.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 45,678</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/PhilosophyBro_Actually</span><span class="timestamp">17 minutes ago</span></div>
+    <div class="comment-text">There's the number. He needed $200,000 to clear $180,000 in debt and have enough left to start over. This wasn't random. This was arithmetic.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 34,567</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/just_jane_ok</span><span class="timestamp">16 minutes ago</span></div>
+    <div class="comment-text">Oh. Oh that's heartbreaking.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 56,789</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">N</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/NorthwestArchive_Dee</span><span class="timestamp">15 minutes ago</span></div>
+    <div class="comment-text">Northwest Orient maintenance consultant records 1969-1970. Robert Calvin Raines. Contract ended March 1971. Eight months before the hijacking. He would have had full access to aircraft technical documentation during that contract including the 727 airstair specifications.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 67,890</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">F</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/FacialComposite_Compare</span><span class="timestamp">12 minutes ago</span></div>
+    <div class="comment-text">I need everyone to look at this.<br><br>Oregon DMV records were partially digitized as part of a 2019 historical archive project.<br><br>I have a driver's license photograph for Robert Calvin Raines. Issued 1968.<br><br>[Image attached]</div>
+    <div class="comment-actions"><span class="upvotes">↑ 89,012</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="thread-note">The thread stops for four minutes. Four minutes where nobody posts anything because everyone is looking at the same photograph. A man in his late forties. Angular jaw. Medium everything. Brown hair going grey at the temples. Clean shaven. The face from the mirror. The face from seat 18C. The face that looked back one last time before stepping off the airstair into the dark.</div>
+
+<div class="comment">
+  <div class="reddit-avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/CascadeDropZone_Mod</span><span class="timestamp">8 minutes ago</span></div>
+    <div class="comment-text">That's him.<br><br>I'm going to say it carefully and I'm going to say it once.<br><br>That's him.<br><br>Robert Calvin Raines. Born September 3rd 1919. Portland Oregon. 511th Parachute Infantry Regiment. Northwest Orient maintenance consultant. Bankrupt 1968. Disappeared from all records November 1971.<br><br>He was 52 years old.<br><br>He jumped out of a plane in combat in the Philippines at 25.<br><br>He jumped out of a plane over Washington state at 52 with $200,000 tied to his body because a business failed and the math didn't work any other way he could find.<br><br>He almost made it.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 234,567</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/just_jane_ok</span><span class="timestamp">6 minutes ago</span></div>
+    <div class="comment-text">Robert Calvin Raines.<br>Now we know his name.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 345,678</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/SGT_Harlow_Ret</span><span class="timestamp">4 minutes ago</span></div>
+    <div class="comment-text">511th PIR. 11th Airborne. Combat veteran. Pacific theater.<br><br>Rest easy soldier.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 456,789</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">D</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/DB_Cooper_Researcher_Official</span><span class="timestamp">2 minutes ago</span></div>
+    <div class="comment-text">Twenty three years.<br><br>Robert Calvin Raines.<br><br>Twenty three years and it was a bankrupt machine parts dealer from Portland who jumped out of planes in the Philippines when he was twenty five years old.<br><br>I need to go outside for a while.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 567,890</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">B</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/BoeingEmployee_Retired_PNW</span><span class="timestamp">1 minute ago</span></div>
+    <div class="comment-text">I knew a Bob Raines.<br><br>Not well. We crossed paths maybe four or five times during his Northwest Orient contract. Quiet man. Knew his aircraft. Always said thank you when you showed him something.<br><br>I had no idea.<br><br>I don't know what to do with that.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 678,901</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/stalechipdefender</span><span class="timestamp">just now</span></div>
+    <div class="comment-text">robert calvin raines bought a plane ticket with cash and tipped the flight attendant and said thank you when people helped him and jumped out of planes in the war and tried one more time when everything fell apart and almost made it<br><br>he was nobody<br>he was everybody<br><br>rest easy bob</div>
+    <div class="comment-actions"><span class="upvotes">↑ 789,012</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="thread-break"></div>
+
+<div class="thread-note">The post appears at 2:17AM. No preamble. No account history. A username created that night that will never post again.</div>
+
+<div class="comment">
+  <div class="reddit-avatar" style="background:#ff4500;color:white;">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username special">u/TheHistoricalRecord_himself</span><span class="timestamp">2:17 AM</span></div>
+    <div class="comment-text" style="font-size:21px;font-weight:500;">He almost made it.</div>
+    <div class="comment-actions"><span class="upvotes">↑ ???</span></div>
+  </div>
+</div>
+
+<div class="thread-note">The thread goes absolutely still. For approximately ninety seconds nobody posts anything. Which on a thread that has been moving at hundreds of comments per minute is its own kind of extraordinary.</div>
+
+<div class="comment">
+  <div class="reddit-avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/CascadeDropZone_Mod</span><span class="timestamp">immediately</span></div>
+    <div class="comment-text">I'm not going to say anything. I'm just going to leave this here.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 456,789</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">D</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/DB_Cooper_Researcher_Official</span><span class="timestamp">2:18 AM</span></div>
+    <div class="comment-text">Twenty three years. And he shows up here. At 2AM. In our thread.<br><br>To say three words about a man he watched die alone in the Cascades.<br><br>I've been outside for an hour and I came back to this.<br><br>I don't have anything else.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 567,890</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/TemporalMechanics_PhD</span><span class="timestamp">2:18 AM</span></div>
+    <div class="comment-text">He's been watching us find him.<br><br>He watched Robert Calvin Raines die in those trees and then he watched us find Robert Calvin Raines from a fifty three year old driver's license photograph and he waited until we had him completely and then he came here and said three words.<br><br>He wanted us to find him.<br><br>He could have told us the name at the end of the video.<br><br>He didn't.<br><br>He let us do it ourselves.<br><br>I need to sit down.<br><br>I am already sitting down.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 678,901</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/stalechipdefender</span><span class="timestamp">2:18 AM</span></div>
+    <div class="comment-text">he gave us the window and let us climb through it ourselves. that's what he always does. that's what he's always done.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 567,890</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/TemporalMechanics_PhD</span><span class="timestamp">2:19 AM</span></div>
+    <div class="comment-text">yes. exactly that. always exactly that.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 456,789</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/just_jane_ok</span><span class="timestamp">2:19 AM</span></div>
+    <div class="comment-text">He came here for Bob.<br>Not for us.<br>For Bob.<br>To make sure someone said it one more time.<br><br>He almost made it.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 891,234</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/SGT_Harlow_Ret</span><span class="timestamp">2:19 AM</span></div>
+    <div class="comment-text">A man who watches everything that has ever happened chose to spend two minutes in a Reddit thread at 2AM to make sure a forgotten soldier from Portland Oregon got his name said out loud by someone who knew the whole story.<br><br>That's who he is.<br>That's who he's always been.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 901,234</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">B</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/BoeingEmployee_Retired_PNW</span><span class="timestamp">2:19 AM</span></div>
+    <div class="comment-text">I crossed paths with Bob Raines four or five times.<br><br>Now the man who watched him die just showed up in a Reddit thread to say three words about him.<br><br>The world is very strange and very small and I think that's okay.<br><br>I think that's more than okay.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 789,012</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">M</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/MargaretFrom_Aberdeen</span><span class="timestamp">2:19 AM</span></div>
+    <div class="comment-text">My granddaughter just woke me up to show me this on her telephone.<br><br>It is four in the morning in Scotland.<br><br>I don't mind.<br><br>He almost made it.<br>She's right. He almost did.<br><br>Goodnight everyone.<br>Goodnight Bob.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 1,234,567</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="thread-break"></div>
+
+<div class="thread-note">The account u/TheHistoricalRecord_himself goes offline at 2:19AM. No indication of what comes next. No promise of silence. No farewell. Just gone the way he's always gone. The window open. Him on the other side of it.</div>
+
+<div class="thread-note" style="text-align:center;font-size:18px;font-weight:600;color:#0f0f0f;font-style:normal;margin-top:24px;">📌 The subreddit pins the comment permanently.<br><br>A moderator adds one line beneath it.<br><br><em>We found him. He found us.<br>That's enough for tonight.</em></div>
+
+</body>
+</html>
