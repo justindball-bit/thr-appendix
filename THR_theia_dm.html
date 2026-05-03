@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: auto; overflow: visible; }
+  body { background: #ffffff; color: #0f0f0f; font-family: Roboto, Arial, sans-serif; padding: 24px; max-width: 800px; }
+
+  .chat-header { margin-bottom: 24px; border-bottom: 2px solid #edeff1; padding-bottom: 16px; }
+  .chat-title { font-size: 22px; font-weight: 700; color: #0f0f0f; }
+  .chat-meta { font-size: 15px; color: #878a8c; margin-top: 4px; }
+
+  .message { display: flex; flex-direction: column; margin-bottom: 20px; }
+  .message-header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+  .username { font-size: 16px; font-weight: 700; }
+  .username.temporal { color: #0079d3; }
+  .username.stale { color: #ff6314; }
+  .username.debunk { color: #46d160; }
+  .username.jordan { color: #cc69b8; }
+  .timestamp { font-size: 13px; color: #878a8c; }
+  .message-text { font-size: 18px; color: #1c1c1c; line-height: 1.7; padding-left: 0; }
+
+  .divider { border-top: 1px solid #edeff1; margin: 28px 0; }
+  .closing-note { font-size: 17px; color: #555; font-style: italic; line-height: 1.8; margin-top: 28px; }
+  .moon-photo { background: #1a1a2e; color: #e0e0e0; font-size: 16px; padding: 16px; border-radius: 8px; margin: 12px 0; font-style: italic; }
+</style>
+</head>
+<body>
+
+<div class="chat-header">
+  <div class="chat-title">Private DM Group: "THR nerds"</div>
+  <div class="chat-meta">4 members: TemporalMechanics_PhD · stalechipdefender · DebunkDaily · Jordan_Reyes_writes</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">okay so I've been sitting on this for a week and I need to talk to actual humans about it because my colleagues at the university are useless</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">useless how</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">one of them watched the Theia video and said "interesting" and went back to his sandwich</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">"interesting" is doing a lot of heavy lifting there</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">to be fair I've been trying to write about this channel for eight months and the best opening line I have is "something is happening"</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">bold</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">Pulitzer worthy honestly</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">okay so can we actually talk about this because I'm having a genuine professional crisis and I could use the company</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">go</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">so the asteroid video was already pushing the limits of what I could comfortably think about. 66 million years is a number I can write down but can't actually hold in my head. but it still has a ceiling on it. there's still life. there's still an ordinary morning. there's still something to anchor to.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">the animals looking up</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">exactly. the animals looking up. that's a human scale emotional anchor even if the timescale isn't human scale. but Theia has no anchor. there's nothing alive. there's nothing that has ever been alive. there's just rock and heat and two proto-planets that are about to become one proto-planet and a moon.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">and he went there anyway</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">and he went there anyway. which means the ability isn't bounded by the presence of life. it isn't bounded by the presence of Earth as we know it. it may not be bounded by anything we can currently identify.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">I made a video eighteen months ago about how this channel was obviously fake</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">we know</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">I just like to say it occasionally as penance</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">it's good for the soul</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">the penance is noted and appreciated. now can we talk about free will</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">oh we're going there immediately</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">we were always going there. that's why I started this conversation.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">okay lay it out</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">so. if the ability has no lower time bound. if he can go back to the formation of the moon, to the formation of the earth, potentially to the Big Bang itself. then the question of whether it has an upper time bound becomes very interesting.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">upper meaning forward</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">upper meaning forward. because there's no obvious physical reason why an ability that can observe the past would be strictly limited to the past. the past and the future are both just regions of spacetime that are not the present.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">I need a minute</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">take your time</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">okay. so you're saying he might be able to see the future.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">I'm saying we can't rule it out based on what we've observed.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">and if he can see the future then the free will question isn't just philosophical it's practical</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">because if the future is observable it's fixed</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">that's the implication that's been keeping me up</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">okay so let me steelman the other side because this is what I do for a living. just because something is observable doesn't mean it's fixed. quantum mechanics already tells us that observation affects outcomes at the subatomic level. why couldn't the same principle apply to temporal observation?</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">it could. in theory. but quantum effects at the macro scale are generally negligible. the Moon forming wasn't a quantum event. Antietam wasn't a quantum event.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">so the past is fixed because we can observe it and it matches the record</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">right. every authenticated detail confirms that what he shows us actually happened and couldn't have happened differently. the Yoshioka school records. the non-digitized photographs. the aerodynamic data from Kitty Hawk. all of it confirms a fixed past.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">so if the future is equally observable</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">then it's equally fixed. yes.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">which means every choice anyone has ever made or will ever make was determined at the moment of the Theia impact</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">or before</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">or before. yes.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">I genuinely wish I hadn't joined this group chat</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">lol</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">okay but here's where it gets interesting for me professionally. because if the future is fixed and observable. then he knows what his next video is going to be. he knew what all his videos were going to be before he posted the first one.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">oh</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">he knew Carol Hiney Marsh was going to find out about Elias. he knew just_jane_ok was going to say I hope he made it home. he knew TemporalMechanics_PhD was going to submit a paper to Nature. he knew all of it.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">I need to lie down</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">you're already sitting down</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">I need to lie down more</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">but wait. if he knew all of that. if the future is fixed and he can see it. then why does he post videos at all. what's the point of showing people things if their reactions are already determined.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">that's either the deepest question or the most pointless question depending on how you look at it</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">I think it's actually the most human question</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">meaning what</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">meaning even if everything is determined. even if every reaction and every comment and every tear and every scientific paper was always going to happen exactly as it happened. the experience of living through it is still real. Carol Hiney Marsh still got to find out her great great grandfather made it home. that moment still happened. that it was always going to happen doesn't make it less real.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">the compatibilist position</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">essentially yes</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">so free will might be an illusion but it's an illusion that feels exactly like the real thing from the inside</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">that's one way to put it</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">that's either very comforting or absolutely terrifying</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">welcome to philosophy</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">okay but I want to come back to something. because we've been assuming that if he can see the future it's the same fixed future that determinism implies. but what if it's not. what if he can see multiple possible futures.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">the many worlds interpretation</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">I don't know enough physics to invoke that deliberately but sure</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">so in the many worlds interpretation every quantum event produces a branching. every possible outcome occurs in some branch of the wavefunction. if his ability works across branches as well as across time then the future he sees might be one of many possible futures rather than the one fixed future.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">which would restore free will</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">which would restore something like free will. yes.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">okay so either the future is fixed and we have no free will or the future branches and we might have free will and either way this guy can apparently see it</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">correct</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">and he's posting YouTube videos</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">and he's posting YouTube videos</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">history didn't wait for cameras</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">history didn't wait for cameras</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">you know what I keep coming back to</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">tell us</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">the restraint. whatever he can see. whether it's just the past or also the future. whether it's just Earth or the entire universe. whether it's one timeline or many. he has shown us ten videos. ten carefully chosen windows. and in none of them has he shown us anything that felt exploitative or cruel or gratuitous.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">he showed us Verus and Priscus walk out of the gate and stopped</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">he showed us Verus and Priscus walk out of the gate and stopped. he showed us Kennedy in the sun and cut to black before. he showed us Bob Raines reaching for the money bag in the dark and missing it by six inches.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">he showed us the thing that made the Moon</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">he showed us the thing that made the Moon. and in all of it there's this consistent editorial sensibility. this sense of someone who understands that having access to everything doesn't mean everything should be shown.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">which is either genuine wisdom or very sophisticated manipulation</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">you can't fully rule out the manipulation angle</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">no you can't</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">no. but I've thought about this a lot. and I keep coming back to the same thing. if this is manipulation. if there's some endgame here that we can't see yet. then it's the longest most patient most carefully constructed manipulation in human history. and at some point the difference between genuine wisdom and perfect simulation of genuine wisdom stops being a meaningful distinction.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">that's going in my article</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">you're welcome</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">I'm crediting you</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">please don't. just put "a physicist who studies things that shouldn't be possible"</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">that's your whole thing isn't it</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">that's my whole thing now yes</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">okay final question before I have to go make dinner</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">go</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">if he can see the future. and the future is fixed. then he already knows what his next video is. he already knows what all his videos will ever be. he already knows how this ends.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">yes</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">does that bother you</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text" style="color:#878a8c;font-style:italic;">[ typing... ]<br>[ typing... ]<br>[ typing... ]</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">yes and no. it bothers the part of me that wants to believe my choices matter. it doesn't bother the part of me that just watched the Moon get made and understood for the first time that I'm made of the same stuff as the thing that made it. 4.5 billion years of consequence leading to me sitting in my office at midnight talking to three people I met in a YouTube comment section about whether free will exists.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">if that was always going to happen I'm not sure I mind.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">that's going in my article too</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">that one you can credit me for</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">I'm glad I joined this group chat actually</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">same</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">same. okay I have a piece to not finish. goodnight everyone.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">goodnight. go look at the Moon before you sleep.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username jordan">Jordan_Reyes_writes</span></div>
+  <div class="message-text">already planning on it</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username debunk">DebunkDaily</span></div>
+  <div class="message-text">me too</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username stale">stalechipdefender</span></div>
+  <div class="message-text">me too</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">good.</div>
+</div>
+
+<div class="message">
+  <div class="message-header"><span class="username temporal">TemporalMechanics_PhD</span></div>
+  <div class="message-text">it's been leaving since the beginning and it's still there.</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="closing-note">Thread goes quiet for six hours.</div>
+
+<div class="moon-photo">📷 Jordan_Reyes_writes sent a photo — Moon from apartment window, 2AM. No caption.</div>
+<div class="moon-photo">📷 TemporalMechanics_PhD sent a photo — Moon from a different window, a different city. No caption.</div>
+<div class="moon-photo">📷 stalechipdefender sent a photo — Moon from a different window, a different city. No caption.</div>
+<div class="moon-photo">📷 DebunkDaily sent a photo — Moon from a different window, a different city. No caption.</div>
+
+<div class="closing-note" style="margin-top:20px;">No words needed.</div>
+
+</body>
+</html>
