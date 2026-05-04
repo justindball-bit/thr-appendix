@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: auto; overflow: visible; }
+  body { background: #ffffff; color: #0f0f0f; font-family: Roboto, Arial, sans-serif; padding: 24px; }
+
+  .subreddit-header { margin-bottom: 8px; }
+  .subreddit-name { font-size: 24px; font-weight: 700; color: #0f0f0f; }
+  .post-title { font-size: 20px; font-weight: 600; color: #0f0f0f; margin-bottom: 4px; margin-top: 8px; }
+  .post-meta { font-size: 15px; color: #666; margin-bottom: 28px; border-bottom: 1px solid #e0e0e0; padding-bottom: 16px; }
+
+  .comment { display: flex; gap: 12px; margin-bottom: 20px; }
+  .comment.reply { margin-left: 40px; margin-bottom: 12px; }
+
+  .reddit-avatar { width: 32px; height: 32px; border-radius: 50%; background: #edeff1; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; color: #0f0f0f; flex-shrink: 0; text-transform: uppercase; }
+
+  .comment-body { flex: 1; }
+  .comment-meta { display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px; }
+  .username { font-size: 15px; font-weight: 700; color: #0079d3; }
+  .timestamp { font-size: 14px; color: #878a8c; }
+  .comment-text { font-size: 17px; color: #1c1c1c; line-height: 1.7; margin-bottom: 8px; }
+  .upvotes { font-size: 15px; font-weight: 600; color: #0f0f0f; }
+  .action { font-size: 14px; color: #878a8c; cursor: pointer; font-weight: 600; }
+  .comment-actions { display: flex; align-items: center; gap: 16px; }
+</style>
+</head>
+<body>
+
+<div class="subreddit-header">
+  <div class="subreddit-name">r/NationalGeographic</div>
+</div>
+
+<div class="post-title">National Geographic just published the most thoughtful piece about The Historical Record yet — "The Cave That Remembered"</div>
+<div class="post-meta">Posted by u/PrehistoryMatters · 4.2k upvotes · 847 comments</div>
+
+<div class="comment">
+  <div class="reddit-avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/CaveArtEnthusiast_Real</span><span class="timestamp">14 hours ago</span></div>
+    <div class="comment-text">The line that got me was "We published the paintings. The Historical Record published the painters." That's not just good writing. That's an honest reckoning with what science communication has been getting wrong for decades.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 3,456</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/PrehistoryMatters</span><span class="timestamp">13 hours ago</span></div>
+    <div class="comment-text">That line has been living in my head since I read it this morning. There's something uncomfortable about a science magazine admitting a YouTube channel did the thing they've been trying to do for thirty years.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 2,345</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/ScienceCommProf_Utrecht</span><span class="timestamp">13 hours ago</span></div>
+    <div class="comment-text">Not uncomfortable. Honest. And honesty about failure is how you get better. National Geographic deserves credit for saying it plainly rather than writing around it.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 1,890</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/TemporalMechanics_PhD</span><span class="timestamp">13 hours ago</span></div>
+    <div class="comment-text">The CNRS statement used the phrase "it made them real" and now National Geographic has built an entire essay around that phrase and I think between those two documents we have accidentally produced the most precise description of what this channel does that anyone has managed so far.<br><br>It doesn't add information. It adds reality. Those are different things and we've been conflating them.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 4,567</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/stalechipdefender</span><span class="timestamp">12 hours ago</span></div>
+    <div class="comment-text">information tells you something happened. reality makes you feel the weight of it happening.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 3,234</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/TemporalMechanics_PhD</span><span class="timestamp">12 hours ago</span></div>
+    <div class="comment-text">Exactly that.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 2,345</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/just_a_lurker_7749</span><span class="timestamp">13 hours ago</span></div>
+    <div class="comment-text">I've never posted in this subreddit before. I found this channel three days ago through the Nanni video of all things. Spent the next two days watching everything in order. Last night I watched the cave painting video and I had to call my dad afterward. We talked for an hour. We haven't talked for an hour in years. I don't know what else to say about that.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 8,901</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/CornfieldGhost</span><span class="timestamp">12 hours ago</span></div>
+    <div class="comment-text">This happens a lot. Welcome.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 4,567</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/just_jane_ok</span><span class="timestamp">12 hours ago</span></div>
+    <div class="comment-text">Call him again next week. Don't wait for a reason.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 12,345</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/just_a_lurker_7749</span><span class="timestamp">11 hours ago</span></div>
+    <div class="comment-text">I will. Thank you.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 6,789</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/SkepticalByNature_99</span><span class="timestamp">12 hours ago</span></div>
+    <div class="comment-text">I'll be the contrarian here. National Geographic spent thirty years failing to make cave art feel real and now they're congratulating an anonymous YouTube channel for doing it while carefully avoiding the question of how. That's not honest reckoning. That's deflection dressed up as humility.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 1,234</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/ScienceCommProf_Utrecht</span><span class="timestamp">11 hours ago</span></div>
+    <div class="comment-text">What question specifically do you think they're deflecting?</div>
+    <div class="comment-actions"><span class="upvotes">↑ 890</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/SkepticalByNature_99</span><span class="timestamp">11 hours ago</span></div>
+    <div class="comment-text">How does someone film inside a sealed UNESCO World Heritage cave that has had strictly controlled access since 1994 without anyone knowing about it. That's not a small question.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 2,345</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/TemporalMechanics_PhD</span><span class="timestamp">10 hours ago</span></div>
+    <div class="comment-text">It's not a small question. It's also not one anyone can answer right now including the CNRS team who have access to the cave and still can't explain the footage. At some point the inability to explain something has to inform how you think about it.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 3,456</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/SkepticalByNature_99</span><span class="timestamp">10 hours ago</span></div>
+    <div class="comment-text">Or the inability to explain it means we're missing something obvious.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 789</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/stalechipdefender</span><span class="timestamp">10 hours ago</span></div>
+    <div class="comment-text">that's been the position since the antietam video. at what point does "missing something obvious" become less likely than the alternative.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 4,567</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/PrehistoricArtResearcher</span><span class="timestamp">11 hours ago</span></div>
+    <div class="comment-text">The scaffold detail is the one my colleagues keep coming back to. We have been arguing about access to the high panels at Chauvet for years. The footage shows two people. One holding a branch platform steady, one painting above. It's so simple and so obvious in retrospect that the embarrassing part isn't that we didn't know. It's that we didn't think to try it experimentally.<br><br>We have been conducting experimental archaeology in the replica cave this week using branch platforms. The results are consistent with the footage in every detail we can measure.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 5,678</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/CaveArtEnthusiast_Real</span><span class="timestamp">10 hours ago</span></div>
+    <div class="comment-text">The man holding the torch and the platform is going to become a standard figure in the literature isn't he.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 3,456</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/PrehistoricArtResearcher</span><span class="timestamp">10 hours ago</span></div>
+    <div class="comment-text">He already has been in our internal discussions. We've been calling him the assistant. Which feels inadequate. He made the work possible. He deserves better than assistant.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 6,789</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/SGT_Harlow_Ret</span><span class="timestamp">9 hours ago</span></div>
+    <div class="comment-text">The ones who hold things steady rarely get named. Doesn't change what they did.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 7,890</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/Philosophy_Undergrad_Still_Tired</span><span class="timestamp">10 hours ago</span></div>
+    <div class="comment-text">The article talks about the boy's smile crossing thirty seven thousand years without losing anything. I keep thinking about what that means philosophically. We assume there's a vast unbridgeable distance between us and people that far back. Different language. Different cognition possibly. Different everything. And then a child makes a mark on a wall and smiles at his father and the distance just. Isn't there. It's not bridged. It just isn't there. It was never there.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 4,567</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/TemporalMechanics_PhD</span><span class="timestamp">9 hours ago</span></div>
+    <div class="comment-text">That's the thing about the channel that I find hardest to articulate professionally. The temporal distance we assume exists between us and the past is partly a function of our inability to see the past clearly. When you see it clearly the distance collapses. Not because the time didn't pass. But because the people were always the same people.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 5,678</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/Philosophy_Undergrad_Still_Tired</span><span class="timestamp">9 hours ago</span></div>
+    <div class="comment-text">That's going in my dissertation.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 2,345</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/TemporalMechanics_PhD</span><span class="timestamp">8 hours ago</span></div>
+    <div class="comment-text">Credit me this time.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 4,567</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/Philosophy_Undergrad_Still_Tired</span><span class="timestamp">8 hours ago</span></div>
+    <div class="comment-text">Obviously.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 3,456</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">R</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/RandomDadFromOklahoma</span><span class="timestamp">9 hours ago</span></div>
+    <div class="comment-text">My kid is nine. She watched this with me. When the father blew the pigment around the boy's hand she grabbed my hand without looking away from the screen. We just sat like that for the rest of the video. I don't have anything smart to say about that. It just happened.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 9,012</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/just_jane_ok</span><span class="timestamp">8 hours ago</span></div>
+    <div class="comment-text">You don't need anything smart. That's already the whole thing.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 6,789</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/ArtHistorian_Florence</span><span class="timestamp">8 hours ago</span></div>
+    <div class="comment-text">What National Geographic correctly identifies but doesn't quite complete is why the pause matters. The four minute twelve second pause before the first handprint. Dr. Vasquez calls it the decision. The moment before the mark. But I think it's more specific than that. It's the moment a person understands that what they are about to do will outlast them. That the mark will be there after they are gone. That stone remembers longer than people do. He knew that. You can see it in the pause. He already knew.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 7,890</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">O</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/OldRomeNewTricks</span><span class="timestamp">7 hours ago</span></div>
+    <div class="comment-text">he knew the wall would remember him after he was gone and he was right and he has been right for thirty seven thousand years</div>
+    <div class="comment-actions"><span class="upvotes">↑ 8,901</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/ArtHistorian_Florence</span><span class="timestamp">7 hours ago</span></div>
+    <div class="comment-text">Yes. Exactly that.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 5,678</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">R</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/RetiredTeacher_Vancouver</span><span class="timestamp">7 hours ago</span></div>
+    <div class="comment-text">I taught high school for thirty four years. History, mostly. I used to struggle every year to make students feel the reality of people who lived long ago. The standard tools. Primary sources. Photographs. Artifacts. Sometimes it worked. Often it didn't. The distance was just too great. They could understand it intellectually but they couldn't feel it.<br><br>I've been retired for three years. I watched this video last week and I called my former department head and told her to show it to every class. Every year. Before anything else. Just show them the boy's smile. Let that be the first thing. Then teach them history.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 11,234</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">V</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/VeteranTeacher_MrKowalski</span><span class="timestamp">6 hours ago</span></div>
+    <div class="comment-text">I've been doing exactly that since the Antietam video. It works. Every time it works.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 7,890</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">R</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/RetiredTeacher_Vancouver</span><span class="timestamp">6 hours ago</span></div>
+    <div class="comment-text">I wish I'd had it thirty four years ago.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 6,789</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">V</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/VeteranTeacher_MrKowalski</span><span class="timestamp">5 hours ago</span></div>
+    <div class="comment-text">The students you taught had you. That wasn't nothing.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 8,901</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="reddit-avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/stalechipdefender</span><span class="timestamp">6 hours ago</span></div>
+    <div class="comment-text">the national geographic article ends by saying the historical record held up a torch so we could finally see.<br><br>i've been thinking about that all day.<br><br>because holding up a torch is exactly what the man in the cave did for the painter on the scaffold.<br><br>and what the father did for the son.<br><br>and what nanni did when he wrote his complaint on a tablet that survived four thousand years.<br><br>and what elias did walking into that cornfield.<br><br>and what orville did lying on the lower wing of the flyer.<br><br>and what shackleton did keeping his men alive on the southern ocean.<br><br>and what galileo did drawing the moon.<br><br>the whole channel is just people holding torches so other people can see.<br><br>that's all it's ever been.<br><br>that's all any of us are ever doing for each other.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 23,456</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/TemporalMechanics_PhD</span><span class="timestamp">5 hours ago</span></div>
+    <div class="comment-text">I'm going to need a minute.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 12,345</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="reddit-avatar">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">u/just_jane_ok</span><span class="timestamp">5 hours ago</span></div>
+    <div class="comment-text">Take your time. We'll be here.</div>
+    <div class="comment-actions"><span class="upvotes">↑ 15,678</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+</body>
+</html>
