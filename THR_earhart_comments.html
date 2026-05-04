@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: auto; overflow: visible; }
+  body { background: #ffffff; color: #0f0f0f; font-family: Roboto, Arial, sans-serif; padding: 24px; }
+  .comments-header { margin-bottom: 28px; }
+  .comments-count { font-size: 22px; font-weight: 500; }
+  .comment { display: flex; gap: 16px; margin-bottom: 28px; }
+  .comment.reply { margin-left: 56px; margin-bottom: 16px; }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 500; flex-shrink: 0; text-transform: uppercase; }
+  .avatar.small { width: 30px; height: 30px; font-size: 13px; }
+  .avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+  .comment-body { flex: 1; }
+  .comment-meta { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+  .username { font-size: 18px; font-weight: 600; }
+  .timestamp { font-size: 16px; color: #666; }
+  .comment-text { font-size: 19px; color: #111; line-height: 1.7; margin-bottom: 10px; }
+  .comment-actions { display: flex; align-items: center; gap: 16px; }
+  .action { display: flex; align-items: center; gap: 4px; font-size: 16px; color: #555; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<div class="comments-header">
+  <div class="comments-count">13 Comments · 198,234,567 views</div>
+</div>
+
+<!-- just_jane_ok -->
+<div class="comment">
+  <div class="avatar"><img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" alt="just_jane_ok"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">4 days ago</span></div>
+    <div class="comment-text">He showed us her face when she looked back at Noonan. That look. I've been thinking about it for four days. That's not fear. That's not resignation. That's something you only see between people who have been through something together. Something that doesn't need words. I hope I've had a look like that with someone. I think I have. I hope so.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,678,901<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/CarolHineyMarsh.png" alt="CarolHineyMarsh"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CarolHineyMarsh</span><span class="timestamp">4 days ago</span></div>
+    <div class="comment-text">I think that's what it means to not be alone.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>28,901,234<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="avatar">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AviationHistory_Prof_Purdue</span><span class="timestamp">4 days ago</span></div>
+    <div class="comment-text">Earhart was a Purdue alumna. We have her Electra in our collection. I have looked at that aircraft many times. The cockpit configuration visible in this footage is accurate in every detail I can identify. The instrument layout. The communication setup. The fishing line used to pass notes between pilot and navigator. That detail is in our archives and nowhere else that I can find publicly documented. I don't know what to say beyond that.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,567,890<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" alt="HistoryNerdEmma"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HistoryNerdEmma</span><span class="timestamp">3 days ago</span></div>
+    <div class="comment-text">It's always the detail nobody thought to fake.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>19,234,567<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AviationHistory_Prof_Purdue</span><span class="timestamp">3 days ago</span></div>
+    <div class="comment-text">Always.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>15,678,901<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="avatar"><img src="https://justindball-bit.github.io/thr-appendix/avatars/SGT_Harlow_Ret.png" alt="SGT_Harlow_Ret"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SGT_Harlow_Ret</span><span class="timestamp">3 days ago</span></div>
+    <div class="comment-text">His hands on the charts. Still on the charts at the end. I've known men who held onto their job right up until they couldn't anymore. Not because it helped. Because it was the thing they knew how to do. That's not resignation. That's dignity. Fred Noonan died doing his job. That means something.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>56,789,012<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" alt="stalechipdefender"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">3 days ago</span></div>
+    <div class="comment-text">SGT_Harlow_Ret always finds the thing that needs saying</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,567,890<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="avatar"><img src="https://justindball-bit.github.io/thr-appendix/avatars/RandomGuyFromTulsa.png" alt="RandomGuyFromTulsa"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">RandomGuyFromTulsa</span><span class="timestamp">3 days ago</span></div>
+    <div class="comment-text">I didn't show this one to my daughter. She's eleven. Some things can wait. But I watched it alone and I thought about her the whole time. About what it means that Amelia Earhart flew that plane in 1937 so my daughter can grow up in a world where nobody questions whether she belongs in a cockpit.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,890,123<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" alt="just_jane_ok"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">2 days ago</span></div>
+    <div class="comment-text">That's exactly right. That's exactly what it means.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,678,901<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/MargaretFrom_Aberdeen.png" alt="MargaretFrom_Aberdeen"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MargaretFrom_Aberdeen</span><span class="timestamp">2 days ago</span></div>
+    <div class="comment-text">Tell her when she's ready. She'll understand.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,567,890<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="avatar"><img src="https://justindball-bit.github.io/thr-appendix/avatars/SandwichShopKevin.png" alt="SandwichShopKevin"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SandwichShopKevin</span><span class="timestamp">2 days ago</span></div>
+    <div class="comment-text">The camera pulling back through the plane. Moving away from them while they keep going forward. I couldn't look away and I wanted to look away. My wife held my hand the whole time. We didn't say anything after. Sometimes there isn't anything to say.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,901,234<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/DebunkDaily.png" alt="DebunkDaily"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">DebunkDaily</span><span class="timestamp">2 days ago</span></div>
+    <div class="comment-text">Sometimes there isn't anything to say. Yes.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,678,901<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="avatar">N</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">NoonanFamily_Statement</span><span class="timestamp">2 days ago</span></div>
+    <div class="comment-text">We are the family of Frederick Noonan. We have watched this footage several times together. We have never spoken publicly about our great uncle before. We are not sure we have the words now either. But we want to say this. He is not a footnote in this video. He is not just the navigator. He is a man. His hands on his charts. His face at the end. That is Frederick Joseph Noonan and we are grateful beyond expression that someone finally showed us who he was in that cockpit. Not a mystery. A person doing his job until he couldn't anymore. Thank you.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>234,567,890<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" alt="just_jane_ok"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 day ago</span></div>
+    <div class="comment-text">He was never a footnote. He was always a person.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>123,456,789<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/CarolHineyMarsh.png" alt="CarolHineyMarsh"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CarolHineyMarsh</span><span class="timestamp">1 day ago</span></div>
+    <div class="comment-text">Welcome. We're glad you're here.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,012,345<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="avatar"><img src="https://justindball-bit.github.io/thr-appendix/avatars/GrumpyFilmEditor.png" alt="GrumpyFilmEditor"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">GrumpyFilmEditor</span><span class="timestamp">1 day ago</span></div>
+    <div class="comment-text">The camera pulling back through the fuselage and then outside. That single continuous movement from inside the cockpit to watching the plane from a distance. I've been trying to figure out how you shoot that for four days. You can't. There is no camera rig. There is no drone. There is no technology that produces that movement from inside an aircraft to outside it in one continuous shot. I've stopped trying to explain it. I'm just watching it.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,678,901<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/FilmMFA_Davis.png" alt="FilmMFA_Davis"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">FilmMFA_Davis</span><span class="timestamp">1 day ago</span></div>
+    <div class="comment-text">I owe this channel an apology I made two years ago. I still owe it. I'm not sure an apology covers it anymore.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>28,901,234<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="avatar"><img src="https://justindball-bit.github.io/thr-appendix/avatars/VeteranTeacher_MrKowalski.png" alt="VeteranTeacher_MrKowalski"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">VeteranTeacher_MrKowalski</span><span class="timestamp">20 hours ago</span></div>
+    <div class="comment-text">I showed my students the title card at the end. Just the title card. Howland Island is two miles long. It is still there. I asked them what that meant. The boy who has said so many remarkable things in my classroom over these two years raised his hand. He said it means she almost made it. And it means the island doesn't know that. And it means the ocean doesn't care. And it means we're the ones who have to.<br><br>Twenty two years.<br><br>That boy.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,012,345<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/MargaretFrom_Aberdeen.png" alt="MargaretFrom_Aberdeen"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MargaretFrom_Aberdeen</span><span class="timestamp">19 hours ago</span></div>
+    <div class="comment-text">We're the ones who have to. Yes. That's it exactly.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>56,789,012<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="avatar"><img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" alt="TemporalMechanics_PhD"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">12 hours ago</span></div>
+    <div class="comment-text">I've been thinking about what this video does differently from all the others. The DB Cooper video showed us a man who almost made it and we felt the tragedy of those six inches. The Shackleton video showed us men who did make it and we felt the relief of it. This one shows us two people who didn't make it and doesn't ask us to feel anything specific. Just shows us the look between them. The hands on the charts. The ocean. And then the island that is still there. Two miles long. Not knowing. Not caring. And somehow that restraint is the most honest thing this channel has ever done.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,890,123<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" alt="stalechipdefender"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">11 hours ago</span></div>
+    <div class="comment-text">the ocean doesn't owe us resolution. he understands that.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,678,901<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" alt="TemporalMechanics_PhD"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">10 hours ago</span></div>
+    <div class="comment-text">No. It doesn't. And neither does he.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,567,890<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="avatar"><img src="https://justindball-bit.github.io/thr-appendix/avatars/OldRomeNewTricks.png" alt="OldRomeNewTricks"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">OldRomeNewTricks</span><span class="timestamp">8 hours ago</span></div>
+    <div class="comment-text">no coordinates.<br>no wreck location.<br>no final answers beyond what happened.<br>just two people and the ocean and the island that didn't know they were looking for it.<br><br>some things belong to the water.<br><br>he knows that.<br><br>i think that's the most important thing he's ever shown us about who he is.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,012,345<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" alt="just_jane_ok"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">7 hours ago</span></div>
+    <div class="comment-text">Some things belong to the water. Yes.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,890,123<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/SGT_Harlow_Ret.png" alt="SGT_Harlow_Ret"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SGT_Harlow_Ret</span><span class="timestamp">6 hours ago</span></div>
+    <div class="comment-text">The sea keeps what the sea keeps. That's always been true.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>56,789,012<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="avatar"><img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" alt="stalechipdefender"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">4 hours ago</span></div>
+    <div class="comment-text">TemporalMechanics_PhD predicted this video before kennedy dropped.<br>he said amelia earhart.<br>he was right about the subject.<br>he had no idea what the video would actually be.<br>none of us did.<br>we thought it would be about the mystery.<br>it wasn't about the mystery.<br>it was about two people in a cockpit over the pacific doing their jobs until they couldn't.<br>it was about a look between them that didn't need words.<br>it was about hands on charts that couldn't help anymore.<br>it was about an island two miles long that is still there.<br><br>we thought we wanted the answer.<br>turns out what we needed was to be in the cockpit with them.<br><br>that's what he always understood that we didn't.<br><br>we never needed the answer.<br>we needed to be there.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>156,789,012<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" alt="TemporalMechanics_PhD"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">3 hours ago</span></div>
+    <div class="comment-text">I predicted the subject. He understood what the story actually was. There's a lesson in that I'm still working out.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,012,345<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small"><img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" alt="just_jane_ok"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">2 hours ago</span></div>
+    <div class="comment-text">We never needed the answer. We needed to be there. I'm going to think about that for a long time.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,901,234<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small">N</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">NoonanFamily_Statement</span><span class="timestamp">1 hour ago</span></div>
+    <div class="comment-text">We needed to be there. Thank you for putting us there.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>123,456,789<span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div style="width:30px;height:30px;border-radius:50%;background:#e0e0e0;flex-shrink:0;"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username" style="color:#065fd4;">TheHistoricalRecord</span><span class="timestamp">just now</span></div>
+    <div class="comment-text" style="font-size:21px;font-weight:500;">Howland Island is two miles long. It is still there.</div>
+    <div class="comment-actions"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>345,678,901<span class="action">Reply</span></div>
+  </div>
+</div>
+
+</body>
+</html>
