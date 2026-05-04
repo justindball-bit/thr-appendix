@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: auto; overflow: visible; }
+  body { background: #ffffff; color: #0f0f0f; font-family: Roboto, Arial, sans-serif; padding: 24px; }
+  .comments-header { margin-bottom: 28px; }
+  .comments-count { font-size: 22px; font-weight: 500; }
+  .comment { display: flex; gap: 16px; margin-bottom: 28px; }
+  .comment.reply { margin-left: 56px; margin-bottom: 16px; }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 500; flex-shrink: 0; text-transform: uppercase; }
+  .avatar.small { width: 30px; height: 30px; font-size: 13px; }
+  .comment-body { flex: 1; }
+  .comment-meta { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+  .username { font-size: 18px; font-weight: 600; }
+  .timestamp { font-size: 16px; color: #666; }
+  .comment-text { font-size: 19px; color: #111; line-height: 1.7; margin-bottom: 10px; }
+  .comment-actions { display: flex; align-items: center; gap: 16px; }
+  .action { display: flex; align-items: center; gap: 4px; font-size: 16px; color: #555; cursor: pointer; }
+  .section-divider { border-top: 2px solid #e0e0e0; margin: 40px 0; }
+  .closing-note { font-size: 18px; color: #555; font-style: italic; line-height: 1.9; margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="comments-header">
+  <div class="comments-count">15 Comments</div>
+</div>
+
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">7 days ago</span></div>
+    <div class="comment-text">I've been sitting with this for three days before writing anything. The asteroid video I could at least contextualize. 66 million years is a long time but it's a time with life in it. With creatures. With an ordinary morning.<br><br>This is different.<br><br>4.5 billion years ago there was no morning. There was no ordinary. There was just rock and heat and the early solar system doing what it does.<br><br>And he went there.<br><br>And he showed us the thing that made the Moon.<br><br>I don't have the professional vocabulary for what I'm feeling right now. I'm not sure professional vocabulary covers it.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,567,890</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">7 days ago</span></div>
+    <div class="comment-text">you've been the most honest person in this comment section since antietam and that's saying something</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>19,234,567</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">7 days ago</span></div>
+    <div class="comment-text">I've just been watching alongside everyone else. Same as you.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>23,456,789</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">7 days ago</span></div>
+    <div class="comment-text">I watched this twice. The first time I didn't say anything afterward. Just sat. The second time my daughter called in the middle of it and I let it go to voicemail for the first time in years. I called her back when it was done. I didn't tell her why I hadn't picked up. I'm not sure I could explain it.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,678,901</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CarolHineyMarsh</span><span class="timestamp">7 days ago</span></div>
+    <div class="comment-text">Some things you just need to finish.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>28,901,234</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">7 days ago</span></div>
+    <div class="comment-text">Yes. Exactly that.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>23,456,789</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SandwichShopKevin</span><span class="timestamp">6 days ago</span></div>
+    <div class="comment-text">My wife watched this one alone first. She never does that. When I got home she was just sitting at the kitchen table not doing anything. I asked if she was okay. She said yes. She said she just needed a few minutes. That was two hours ago. We've been sitting here together since. We haven't said much. I don't think we need to.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>56,789,012</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/SGT_Harlow_Ret.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SGT_Harlow_Ret</span><span class="timestamp">6 days ago</span></div>
+    <div class="comment-text">Sometimes that's the right response.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,567,890</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SandwichShopKevin</span><span class="timestamp">6 days ago</span></div>
+    <div class="comment-text">she wants me to tell you she finally has something to say. she said: the Moon was always there. we just didn't know where it came from. now we do. and somehow that makes it more itself, not less.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,890,123</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">6 days ago</span></div>
+    <div class="comment-text">Please tell her she should have been posting all along.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,678,901</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SandwichShopKevin</span><span class="timestamp">6 days ago</span></div>
+    <div class="comment-text">she's smiling. she says maybe now she will.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>38,901,234</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PlanetaryScience_Dr_Osei</span><span class="timestamp">6 days ago</span></div>
+    <div class="comment-text">I study planetary formation. Have done for twenty years. I watched this video in my office at 6AM before anyone else arrived. I needed to be alone for it.<br><br>The oblique angle is confirmed. 45 degrees roughly. We've been arguing about this in the literature for fifteen years.<br><br>The debris field organization is faster than our most optimistic models predicted. Not hours. Not years. Something between those two things that we don't have good language for yet.<br><br>The proto-Earth's surface in the final frames of the approach sequence shows thermal features consistent with tidal heating effects we theorized but could never confirm.<br><br>I have fourteen years of published work that requires revision.<br><br>I am not upset about this.<br><br>I am going to go call my advisor who retired in 2019 and tell her what I just saw.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>29,012,345</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">6 days ago</span></div>
+    <div class="comment-text">Please report back.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>18,901,234</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PlanetaryScience_Dr_Osei</span><span class="timestamp">5 days ago</span></div>
+    <div class="comment-text">She cried. We both did. She said she always hoped someone would find a way to see it.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,678,901</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MargaretFrom_Aberdeen</span><span class="timestamp">6 days ago</span></div>
+    <div class="comment-text">My granddaughter showed me this one at midnight. I should have been asleep. I'm glad I wasn't.<br><br>I kept thinking about the Moon outside my window. The same Moon I've looked at my whole life. My mother looked at it. Her mother looked at it. All the way back.<br><br>Now I know what made it.<br><br>It doesn't feel smaller for knowing. It feels more itself somehow. Like it earned its place up there.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,890,123</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">RandomGuyFromTulsa</span><span class="timestamp">5 days ago</span></div>
+    <div class="comment-text">MargaretFrom_Aberdeen my daughter said almost the exact same thing. she's nine. you're eighty three. and you landed in the same place.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,567,890</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MargaretFrom_Aberdeen</span><span class="timestamp">5 days ago</span></div>
+    <div class="comment-text">Some things are just true regardless of how old you are when you find them.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>56,789,012</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">OldRomeNewTricks</span><span class="timestamp">5 days ago</span></div>
+    <div class="comment-text">he started with soldiers in a cornfield.<br>then the wright brothers.<br>then shackleton.<br>then kennedy.<br>then mozart.<br>then gladiators.<br>then a hijacker dying alone in the cascades.<br>then a duel in a kyoto temple.<br>then the thing that killed the dinosaurs.<br>then the thing that made the moon.<br><br>i keep trying to find the thread that connects all of it and i think i've finally got it.<br><br>he's not showing us history.<br>he's showing us how we got here.<br>all the way back to the beginning of here.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,901,234</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">5 days ago</span></div>
+    <div class="comment-text">that's it. that's exactly it.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,678,901</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">5 days ago</span></div>
+    <div class="comment-text">I've been trying to write that sentence for a week. You just wrote it.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>38,901,234</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">VeteranTeacher_MrKowalski</span><span class="timestamp">4 days ago</span></div>
+    <div class="comment-text">I showed my students the final ten minutes today. Just the cooling. Just the two bodies finding their relationship to each other. I didn't say anything before I played it. I didn't say anything after.<br><br>We just sat with it for a while.<br><br>Then one student, a boy who hasn't spoken voluntarily in class since September, raised his hand.<br><br>He said: is that why the Moon always faces the same way toward us?<br><br>We spent the rest of the period on tidal locking. Best class I've taught in twenty two years.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,678,901</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">4 days ago</span></div>
+    <div class="comment-text">That boy is going to be okay.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,567,890</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">VeteranTeacher_MrKowalski</span><span class="timestamp">4 days ago</span></div>
+    <div class="comment-text">He really is.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>28,901,234</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PhilosophyBro_Actually</span><span class="timestamp">4 days ago</span></div>
+    <div class="comment-text">Every religion, every creation story, every culture's answer to where did we come from just had to make room for thirty four minutes of footage.<br><br>I don't say that to diminish any of them.<br><br>I say it because I think most of them were pointing at something true even if they didn't have the vocabulary for the actual mechanics of it.<br><br>Something made this.<br><br>Something violent and enormous and indifferent made this.<br><br>And out of that violence came everything.<br><br>I don't know what to call that.<br><br>But I don't think the old words are wrong. I think they were doing their best with what they had.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>56,789,012</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CarolHineyMarsh</span><span class="timestamp">3 days ago</span></div>
+    <div class="comment-text">That's the kindest way I've ever seen anyone say that.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,567,890</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PhilosophyBro_Actually</span><span class="timestamp">3 days ago</span></div>
+    <div class="comment-text">I've been thinking about it for three days. Wanted to get it right.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>23,456,789</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/DebunkDaily.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">DebunkDaily</span><span class="timestamp">3 days ago</span></div>
+    <div class="comment-text">I'm not going to say anything analytical.<br><br>I'm just going to say that I watched two worlds become one world and one moon and I thought about every single video this channel has ever posted and I thought about how all of it, every second of it, required this to happen first.<br><br>Antietam required this.<br>Kitty Hawk required this.<br>Shackleton required this.<br>Bob Raines in that forest required this.<br>just_jane_ok hoping Elias made it home required this.<br><br>Everything required this.<br><br>That's a lot to sit with on a Tuesday morning.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,890,123</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">3 days ago</span></div>
+    <div class="comment-text">everything required this. i'm going to be thinking about that for a long time.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>38,901,234</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">GrumpyFilmEditor</span><span class="timestamp">2 days ago</span></div>
+    <div class="comment-text">I have nothing technical to offer on this one.<br><br>There is no camera. There is no cinematography. There is no craft to analyze.<br><br>There is just a man who went back 4.5 billion years and watched the Moon get made.<br><br>I've spent thirty years thinking about how footage is constructed.<br><br>This isn't constructed.<br><br>It just is.<br><br>I think that's the whole point.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,678,901</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="avatar">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">someone_did_the_math</span><span class="timestamp">2 days ago</span></div>
+    <div class="comment-text">The Moon moves away from Earth at 3.8 centimeters per year.<br><br>The impact was 4.5 billion years ago.<br><br>4,500,000,000 multiplied by 3.8 centimeters.<br><br>The Moon has traveled approximately 171,000 kilometers away from Earth since the moment this video ends.<br><br>It started where we just watched it form.<br><br>It's been moving away ever since.<br><br>It's still here.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,012,345</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">2 days ago</span></div>
+    <div class="comment-text">It's been leaving since the beginning and it's still here.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,890,123</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">2 days ago</span></div>
+    <div class="comment-text">That might be the most beautiful thing anyone has said in this comment section.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>56,789,012</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MargaretFrom_Aberdeen</span><span class="timestamp">2 days ago</span></div>
+    <div class="comment-text">It has. And so have we.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,901,234</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/SGT_Harlow_Ret.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SGT_Harlow_Ret</span><span class="timestamp">2 days ago</span></div>
+    <div class="comment-text">MargaretFrom_Aberdeen. Always.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,678,901</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">1 day ago</span></div>
+    <div class="comment-text">after the asteroid video i said he wasn't showing us history anymore. he was showing us everything.<br><br>i was right but i didn't know how right.<br><br>the asteroid was sixty six million years ago.<br><br>this is four and a half billion.<br><br>where does he go from here.<br><br>i've been asking that since antietam.<br><br>i used to mean what historical event comes next.<br><br>i don't think that's what i mean anymore.<br><br>i think i mean something bigger than that now.<br><br>i think we all do.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,901,234</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">1 day ago</span></div>
+    <div class="comment-text">I've been thinking about that too.<br><br>He went back to the beginning of the Earth.<br><br>I keep wondering if that's where he stops going back.<br><br>Or if it's just where he stopped this time.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>56,789,012</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">1 day ago</span></div>
+    <div class="comment-text">don't</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,890,123</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">1 day ago</span></div>
+    <div class="comment-text">I know.<br>I can't help it.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,678,901</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="closing-note" style="margin-top:32px;margin-bottom:32px;">
+TheHistoricalRecord liked someone_did_the_math's comment about the Moon's distance.<br><br>
+The notification appears quietly.<br><br>
+Nobody sees it for six hours because the comment section is moving too fast.<br><br>
+When someone does notice they post a screenshot without comment.<br><br>
+The screenshot gets 12 million likes.<br><br>
+The Historical Record doesn't interact again.<br><br>
+But for those six hours before anyone noticed he was there, he was just another person in the comment section reading what people had to say about the thing he showed them.<br><br>
+The Moon.<br><br>
+Made from violence.<br><br>
+Still here.<br><br>
+Still leaving.<br><br>
+Still ours.
+</div>
+
+<div class="section-divider"></div>
+
+<div class="comment">
+  <div class="avatar">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">anon_nobody_2847</span><span class="timestamp">just now</span></div>
+    <div class="comment-text">every time I look at the moon now I'm going to think about this.<br><br>I'm going to think about the thing that made it.<br><br>I'm going to think about the fact that without that collision nothing I love would exist.<br><br>Not the moon.<br><br>Not the earth.<br><br>Not me.<br><br>Not anyone.<br><br>thank you for showing us where we come from.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>47,890,234</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">just now</span></div>
+    <div class="comment-text">Elias Hiney looked at this same moon.<br><br>So did Verus and Priscus.<br><br>So did Musashi.<br><br>So did Mozart.<br><br>So did Bob Raines falling through the dark over Washington state.<br><br>The same moon.<br><br>Made by the same thing.<br><br>We all came from the same place.<br><br>I don't know why that makes me feel less alone.<br><br>But it does.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,890,234</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div style="width:30px;height:30px;border-radius:50%;background:#e0e0e0;flex-shrink:0;"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username" style="color:#065fd4;">TheHistoricalRecord</span><span class="timestamp">just now</span></div>
+    <div class="comment-text" style="font-size:24px;font-weight:600;">Yes.</div>
+    <div class="comment-actions"><div class="action"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#555;"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>234,567,890</div><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<div class="closing-note" style="margin-top:40px;">
+The internet doesn't sleep that night.<br>
+Or the next night.<br>
+Or the night after that.<br><br>
+And somewhere in the quiet of wherever he is.<br><br>
+He looks up at the Moon too.<br><br>
+The same Moon.<br><br>
+Made by the same thing.<br><br>
+That made all of it.<br><br>
+All of us.<br><br>
+Every single one.
+</div>
+
+</body>
+</html>
