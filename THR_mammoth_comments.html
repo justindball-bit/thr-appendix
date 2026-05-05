@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: auto; overflow: visible; }
+  body { background: #ffffff; color: #0f0f0f; font-family: Roboto, Arial, sans-serif; padding: 24px; }
+  .comments-header { margin-bottom: 28px; }
+  .comments-count { font-size: 22px; font-weight: 500; }
+  .comment { display: flex; gap: 16px; margin-bottom: 28px; }
+  .comment.reply { margin-left: 56px; margin-bottom: 16px; }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 500; flex-shrink: 0; text-transform: uppercase; color: #555; }
+  .avatar.small { width: 30px; height: 30px; font-size: 13px; }
+  .comment-body { flex: 1; }
+  .comment-meta { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+  .username { font-size: 18px; font-weight: 600; color: #0f0f0f; }
+  .username.thr { color: #065fd4; }
+  .timestamp { font-size: 16px; color: #666; }
+  .comment-text { font-size: 19px; color: #111; line-height: 1.7; margin-bottom: 10px; }
+  .comment-actions { display: flex; align-items: center; gap: 16px; }
+  .action { display: flex; align-items: center; gap: 4px; font-size: 16px; color: #555; cursor: pointer; }
+  .action svg { width: 18px; height: 18px; fill: #555; }
+</style>
+</head>
+<body>
+
+<div class="comments-header">
+  <div class="comments-count">Comments</div>
+</div>
+
+<!-- PleistoceneNerd_Actually — top level -->
+<div class="comment">
+  <div class="avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">47 minutes ago</span></div>
+    <div class="comment-text">okay so for anyone who doesn't know: Wrangel Island is why this date matters. mainland mammoths were gone by 10,000 BC. Wrangel was isolated by rising sea levels and a small population survived there — cut off, evolving separately — for another eight thousand years. 1650 BC is not prehistoric. that's Bronze Age. the Egyptians were building things. this animal's great great grandmother was alive when Stonehenge was completed. i need everyone to sit with that for a second.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>48,200</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">41 minutes ago</span></div>
+    <div class="comment-text">the egyptians were building things</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>31,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- PleistoceneNerd_Actually reply -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">39 minutes ago</span></div>
+    <div class="comment-text">yes. and this animal had no idea.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,100</div>
+    </div>
+  </div>
+</div>
+
+<!-- WrangellWatcher_Olga — top level -->
+<div class="comment">
+  <div class="avatar">W</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">WrangellWatcher_Olga</span><span class="timestamp">44 minutes ago</span></div>
+    <div class="comment-text">I am a field researcher. I have spent three seasons on Wrangel Island. The vegetation is exactly right. The sedge composition, the mosses, the low-growing willows along the stream bank — this is late summer on Wrangel, not a reconstruction of it. The light is right. The way the sun sits. Someone was there.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>29,800</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- PleistoceneNerd_Actually reply to Olga -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">38 minutes ago</span></div>
+    <div class="comment-text">the wildflowers too. I paused at the 2 minute mark. those are Papaver lapponicum. Arctic poppy. exactly the right species for that habitat and that season. not a generic 'tundra flowers.' the right ones.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>22,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- HolarcticHerb reply -->
+<div class="comment reply">
+  <div class="avatar small">H</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HolarcticHerb</span><span class="timestamp">33 minutes ago</span></div>
+    <div class="comment-text">Confirmed. Papaver lapponicum and what looks like Dryas octopetala in the drier patches. Nobody fakes that level of botanical specificity. Nobody even knows to.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>18,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- TemporalMechanics_PhD — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">40 minutes ago</span></div>
+    <div class="comment-text">the calling sequence. I've watched it four times. he's not distressed. he's not alarmed. it's just — checking. the way you call out in a house you think might be empty. and then it is empty. and you already knew it was going to be empty. and you called anyway.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">35 minutes ago</span></div>
+    <div class="comment-text">the way you raise your voice not in anger but in the simple need to be heard by someone somewhere. that line.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">31 minutes ago</span></div>
+    <div class="comment-text">and then he lowers his head and moves on. doesn't stand there. doesn't wait. just. moves on. like he's done this before. like he does this every time.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- PleistoceneNerd_Actually reply -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">28 minutes ago</span></div>
+    <div class="comment-text">elephant calling behavior is well documented. they call. they listen. they call again. and if nothing answers they move on. it's not resignation — it's just the behavior. but knowing the behavior doesn't make that sequence easier to watch.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>41,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- MammothMorphology_Lab — top level -->
+<div class="comment">
+  <div class="avatar">M</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MammothMorphology_Lab</span><span class="timestamp">36 minutes ago</span></div>
+    <div class="comment-text">The tusk curvature and wear pattern is consistent with a male of approximately 50–60 years. Wrangel mammoths were smaller than their mainland relatives — insular dwarfism over those eight thousand isolated years — but this individual is still large for the population. The reddish-brown coat coloration is accurate for summer. The winter coat would be substantially thicker and longer. You can actually see where the summer shedding is incomplete along the shoulders.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>33,600</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- PleistoceneNerd_Actually reply to MammothMorphology_Lab -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">29 minutes ago</span></div>
+    <div class="comment-text">yes — and the slight asymmetry in tusk wear suggests a left-side preference for foraging. modern elephants show the same laterality. fifty thousand years of evolutionary distance and same handedness.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>27,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- WrangellWatcher_Olga reply -->
+<div class="comment reply">
+  <div class="avatar small">W</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">WrangellWatcher_Olga</span><span class="timestamp">24 minutes ago</span></div>
+    <div class="comment-text">The gait also. The slight stiffness in the right foreleg. Old injury or just age. Either way that's not something you model. That's something that happened to this specific animal.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>19,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">32 minutes ago</span></div>
+    <div class="comment-text">he moves like he owns the place. which he does. which is also the problem.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,300</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- JustHereForDinos — top level -->
+<div class="comment">
+  <div class="avatar">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">JustHereForDinos</span><span class="timestamp">28 minutes ago</span></div>
+    <div class="comment-text">I found this channel three weeks ago through the dinosaur video. I've watched everything since. I don't know why I'm more affected by this one than the asteroid. The asteroid killed everything. This is just one animal. But somehow this is the one I can't stop thinking about.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>44,100</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply to JustHereForDinos -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">22 minutes ago</span></div>
+    <div class="comment-text">the asteroid happened to everything at once. this happened to one animal who had no one left to happen to it with.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>198,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">19 minutes ago</span></div>
+    <div class="comment-text">yeah</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- PleistoceneNerd_Actually — bones sequence top level -->
+<div class="comment">
+  <div class="avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">25 minutes ago</span></div>
+    <div class="comment-text">the bones sequence. I want to talk about the bones sequence. elephants visiting the remains of their kind is documented in living species. they touch the bones with their trunks. they return to the same sites. they show what looks like sustained interest in remains specifically — not other large animal bones, specifically their own kind. whether this is grief in any meaningful sense is a question we can't answer. but the behavior is real and it is old and he is showing it exactly.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>38,700</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- TemporalMechanics_PhD reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">19 minutes ago</span></div>
+    <div class="comment-text">behavior so old it precedes language and memory and whatever we call grief by a margin we cannot measure. that's the line that got me.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">16 minutes ago</span></div>
+    <div class="comment-text">he finds the skull and stands over it for a long time. I didn't breathe.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>93,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- ArcticGeologist_Finn — top level -->
+<div class="comment">
+  <div class="avatar">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ArcticGeologist_Finn</span><span class="timestamp">21 minutes ago</span></div>
+    <div class="comment-text">the permafrost on Wrangel has yielded well-preserved mammoth remains for decades. DNA, soft tissue in some cases. we know what they looked like. we know their diet from stomach contents. we know their genetics. what we didn't have until now was any sense of how they moved through that landscape. this changes that in ways I haven't fully processed yet.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>24,100</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender — closing top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">14 minutes ago</span></div>
+    <div class="comment-text">this channel has shown us the moment the moon formed. it has shown us a man furious about copper. it has shown us a father and a son in a cave and a woman over the pacific who almost made it and a soldier in a cornfield who did.<br><br>and now it shows us an old animal on a cold island walking to water and eating and calling and getting no answer and moving on.<br><br>not because it's tragic. because it's a tuesday. because that's what you do.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>287,600</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">9 minutes ago</span></div>
+    <div class="comment-text">because that's what you do.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>156,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- TemporalMechanics_PhD reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">7 minutes ago</span></div>
+    <div class="comment-text">the island is still there.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>201,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">5 minutes ago</span></div>
+    <div class="comment-text">yeah</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>178,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- TheHistoricalRecord — final -->
+<div class="comment reply">
+  <div class="avatar small" style="background:#e0e0e0;"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username thr">TheHistoricalRecord</span><span class="timestamp">just now</span></div>
+    <div class="comment-text">He did not know it was the last.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>4,891,200</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
