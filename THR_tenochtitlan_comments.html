@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: auto; overflow: visible; }
+  body { background: #ffffff; color: #0f0f0f; font-family: Roboto, Arial, sans-serif; padding: 24px; }
+  .comments-header { margin-bottom: 28px; }
+  .comments-count { font-size: 22px; font-weight: 500; }
+  .comment { display: flex; gap: 16px; margin-bottom: 28px; }
+  .comment.reply { margin-left: 56px; margin-bottom: 16px; }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 500; flex-shrink: 0; text-transform: uppercase; color: #555; }
+  .avatar.small { width: 30px; height: 30px; font-size: 13px; }
+  .comment-body { flex: 1; }
+  .comment-meta { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+  .username { font-size: 18px; font-weight: 600; color: #0f0f0f; }
+  .timestamp { font-size: 16px; color: #666; }
+  .comment-text { font-size: 19px; color: #111; line-height: 1.7; margin-bottom: 10px; }
+  .comment-actions { display: flex; align-items: center; gap: 16px; }
+  .action { display: flex; align-items: center; gap: 4px; font-size: 16px; color: #555; cursor: pointer; }
+  .action svg { width: 18px; height: 18px; fill: #555; }
+</style>
+</head>
+<body>
+
+<div class="comments-header">
+  <div class="comments-count">Comments</div>
+</div>
+
+<!-- MesoamericanMarkets_Dr_Reyes — top level -->
+<div class="comment">
+  <div class="avatar">M</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MesoamericanMarkets_Dr_Reyes</span><span class="timestamp">2 hours ago</span></div>
+    <div class="comment-text">I have spent twenty two years studying the market systems of pre-Columbian Mesoamerica. The Tlatelolco sequence. I need to talk about the Tlatelolco sequence. The spatial organization alone — the way the goods are arranged by category, the clear traffic flow between sections, the presence of what appear to be pochteca overseeing transactions — all of it consistent with every primary source description we have, including Cortés's own letters, which described this market as larger and better organized than anything in Spain. He wasn't exaggerating. I always told my students he wasn't exaggerating. Now I can show them he wasn't exaggerating.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>91,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- PleistoceneNerd_Actually reply -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">1 hour ago</span></div>
+    <div class="comment-text">different channel, different century, same experience. welcome to the part where everything you spent your career knowing becomes something you can finally see.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- MesoamericanMarkets_Dr_Reyes reply -->
+<div class="comment reply">
+  <div class="avatar small">M</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MesoamericanMarkets_Dr_Reyes</span><span class="timestamp">1 hour ago</span></div>
+    <div class="comment-text">That is exactly what this is. Yes.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>28,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- TempleMayorDig_Official — top level -->
+<div class="comment">
+  <div class="avatar">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TempleMayorDig_Official</span><span class="timestamp">2 hours ago</span></div>
+    <div class="comment-text">We are the active archaeology team at the Templo Mayor excavation site in Mexico City. We have been on a video call since 6:30 this morning. We have paused the call three times to watch specific sequences again. The northeast corner of the ceremonial precinct. The construction phase visible in the platform base. The staircase proportions. All of it consistent with the pre-Ahuitzotl phase — before the major enlargement of the 1480s. We have been arguing about the construction sequence of that platform for four years. We are no longer arguing. We would very much like to know how this is possible.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>44,300</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- TemporalMechanics_PhD reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">1 hour ago</span></div>
+    <div class="comment-text">you've been asking the right question for four years. he just handed you the answer. that's how this channel works. it finds the people who have been looking longest and gives them what they needed.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- TempleMayorDig_Official reply -->
+<div class="comment reply">
+  <div class="avatar small">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TempleMayorDig_Official</span><span class="timestamp">58 minutes ago</span></div>
+    <div class="comment-text">We are going to need a moment to process that.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>29,100</div>
+    </div>
+  </div>
+</div>
+
+<!-- PleistoceneNerd_Actually reply -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">52 minutes ago</span></div>
+    <div class="comment-text">take your time. the footage isn't going anywhere.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>21,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- GrumpyFilmEditor — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/GrumpyFilmEditor.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">GrumpyFilmEditor</span><span class="timestamp">1 hour 47 minutes ago</span></div>
+    <div class="comment-text">I have analyzed the technical aspects of every video this channel has ever posted. I told myself after the mammoth video I was done doing that. I lasted eleven days. The causeway sequence. Ground level, looking toward the city, the figures in the middle distance, the water on both sides catching the early light. I have been trying to figure out for forty minutes how you capture that shot. There is no camera position that gives you that angle on a structure that no longer exists over a lake that no longer exists. And yet there it is. Ten out of ten. No notes. I need to go lie down.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,300</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- DebunkDaily reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/DebunkDaily.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">DebunkDaily</span><span class="timestamp">1 hour 31 minutes ago</span></div>
+    <div class="comment-text">GrumpyFilmEditor you say this every time and every time I believe you and every time you come back.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>44,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- GrumpyFilmEditor reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/GrumpyFilmEditor.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">GrumpyFilmEditor</span><span class="timestamp">1 hour 28 minutes ago</span></div>
+    <div class="comment-text">I always come back. That's the thing. I always come back.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>38,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 44 minutes ago</span></div>
+    <div class="comment-text">The boy kept the bird. I need to believe the boy kept the bird.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>143,200</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CarolHineyMarsh reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CarolHineyMarsh.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CarolHineyMarsh</span><span class="timestamp">1 hour 31 minutes ago</span></div>
+    <div class="comment-text">He did. Until he didn't. And that's enough. Elias kept coming home from the war until one day he didn't have to anymore. Things last as long as they last. That's all any of us get.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 24 minutes ago</span></div>
+    <div class="comment-text">Carol.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,600</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">1 hour 18 minutes ago</span></div>
+    <div class="comment-text">things last as long as they last. that's the whole channel right there in six words.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>98,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- Tlatelolco_Born — top level -->
+<div class="comment">
+  <div class="avatar">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">Tlatelolco_Born</span><span class="timestamp">1 hour 39 minutes ago</span></div>
+    <div class="comment-text">I am from Tlatelolco. Not the ancient city. The neighborhood. The one that was built on top of it. I walk through the Plaza de las Tres Culturas every day on my way to work. There are Aztec ruins in the middle of my neighborhood and I walk past them every morning and I have walked past them so many times they stopped surprising me. This morning I watched a market operate in the same place my neighborhood stands and I had to sit down on the floor of my kitchen. The reeds at the edge of the lake. The waterfowl on the water. The mountain behind the city. My mountain. My neighborhood. My market. I didn't know I was missing it until he showed it to me. I have been crying for an hour and I am going to be late for work and I don't care.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>187,300</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 22 minutes ago</span></div>
+    <div class="comment-text">You are not late. You are exactly where you are supposed to be.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">1 hour 18 minutes ago</span></div>
+    <div class="comment-text">welcome. we're glad you found it.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- MargaretFrom_Aberdeen reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MargaretFrom_Aberdeen.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MargaretFrom_Aberdeen</span><span class="timestamp">1 hour 11 minutes ago</span></div>
+    <div class="comment-text">My granddaughter showed me your comment before she showed me the video. I watched the video and then I came back to find you. I'm eighty three years old and I've never seen Mexico City. But I recognize that feeling. Finding out that something you walk past every day was once something extraordinary. We all have that place. You have yours back now. Don't let it go.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- Tlatelolco_Born reply -->
+<div class="comment reply">
+  <div class="avatar small">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">Tlatelolco_Born</span><span class="timestamp">58 minutes ago</span></div>
+    <div class="comment-text">I won't. Thank you. I don't know your name but thank you.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>201,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- MargaretFrom_Aberdeen reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MargaretFrom_Aberdeen.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MargaretFrom_Aberdeen</span><span class="timestamp">51 minutes ago</span></div>
+    <div class="comment-text">Margaret. From Aberdeen. Now you know.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>167,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- PleistoceneNerd_Actually — top level -->
+<div class="comment">
+  <div class="avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">1 hour 33 minutes ago</span></div>
+    <div class="comment-text">different animal this time but same instinct so here we go. Wrangel Island 1650 BC I was excited about a date. This one the date is 1450 AD and I need everyone to understand what that means. The last woolly mammoth died three thousand years before this market opened. Three thousand years of human history between a cold island in the Arctic and a city of two hundred thousand people on a lake in central Mexico. And this channel has now shown us both ends of that span in consecutive videos. I don't know if that was intentional. I suspect everything this channel does is intentional.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- TemporalMechanics_PhD reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">1 hour 19 minutes ago</span></div>
+    <div class="comment-text">it was intentional. it's always intentional. the mammoth was alone. the market has sixty thousand people in it. he doesn't pick things randomly. he picks them against each other.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">1 hour 12 minutes ago</span></div>
+    <div class="comment-text">one animal on an empty island calling into silence. sixty thousand people in a market so loud you could hear it from the mainland. same channel. consecutive videos. yeah that's not an accident.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- PleistoceneNerd_Actually reply -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">1 hour 6 minutes ago</span></div>
+    <div class="comment-text">I need to go think about this for a while.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>44,100</div>
+    </div>
+  </div>
+</div>
+
+<!-- TemporalMechanics_PhD reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">59 minutes ago</span></div>
+    <div class="comment-text">we'll be here when you get back.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>38,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- VeteranTeacher_MrKowalski — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/VeteranTeacher_MrKowalski.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">VeteranTeacher_MrKowalski</span><span class="timestamp">1 hour 28 minutes ago</span></div>
+    <div class="comment-text">I showed my students the causeway sequence this morning. Just that. The opening three minutes. The city emerging from the mist. The figures walking toward it. I didn't say anything before I played it. When it ended one of my students — not the boy who has been saying remarkable things in my classroom since the Theia video, a different student, a girl who has been quiet all year — raised her hand. She said: they built that across a lake so they could get to their city. And I said yes. And she said that means they already knew what they were. I said what do you mean. She said you don't build something like that unless you know you're worth building it for. Twenty two years. I am writing that down.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,300</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 14 minutes ago</span></div>
+    <div class="comment-text">That girl.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- MargaretFrom_Aberdeen reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MargaretFrom_Aberdeen.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MargaretFrom_Aberdeen</span><span class="timestamp">1 hour 8 minutes ago</span></div>
+    <div class="comment-text">Please tell her that an old woman in Scotland thinks she has already understood something it takes most people a lifetime to find.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>98,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- VeteranTeacher_MrKowalski reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/VeteranTeacher_MrKowalski.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">VeteranTeacher_MrKowalski</span><span class="timestamp">58 minutes ago</span></div>
+    <div class="comment-text">I will. She'll be embarrassed. She'll also never forget it.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,100</div>
+    </div>
+  </div>
+</div>
+
+<!-- HighAltitudeBotany_Lab — top level -->
+<div class="comment">
+  <div class="avatar">H</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HighAltitudeBotany_Lab</span><span class="timestamp">1 hour 21 minutes ago</span></div>
+    <div class="comment-text">Brief note from someone who studies high altitude Mexican flora. The vegetation along the lake edge is correct for Lake Texcoco at 2,200 meters elevation. Tule reeds. Ahuejote willows in the middle distance. Specific aquatic grasses consistent with the brackish conditions of the lake's eastern basin. Not a tropical lake. Not a generic lake. This specific lake at this specific altitude with this specific vegetation. Someone knows exactly where they were.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>29,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- MesoamericanMarkets_Dr_Reyes reply -->
+<div class="comment reply">
+  <div class="avatar small">M</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MesoamericanMarkets_Dr_Reyes</span><span class="timestamp">1 hour 9 minutes ago</span></div>
+    <div class="comment-text">This is what this channel always does. The detail nobody thought to check. Every time.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>18,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- HistoryNerdEmma reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HistoryNerdEmma</span><span class="timestamp">1 hour 2 minutes ago</span></div>
+    <div class="comment-text">It's always the detail nobody thought to fake.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>14,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- WhyNot1519 — top level -->
+<div class="comment">
+  <div class="avatar">W</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">WhyNot1519</span><span class="timestamp">1 hour 14 minutes ago</span></div>
+    <div class="comment-text">Genuine question and I'm not trying to start anything. Why 1450. Why not 1519. Why not show us what actually happened. Isn't that the more important story.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>44,800</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- MesoamericanMarkets_Dr_Reyes reply -->
+<div class="comment reply">
+  <div class="avatar small">M</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MesoamericanMarkets_Dr_Reyes</span><span class="timestamp">1 hour 1 minute ago</span></div>
+    <div class="comment-text">We know what happened in 1519. We have detailed accounts from both sides. What we didn't have — what nobody had — was any sense of what was lost. You can't understand the weight of a destruction you can't picture. He gave us the picture first. That's not avoidance. That's the right order.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- Tlatelolco_Born reply -->
+<div class="comment reply">
+  <div class="avatar small">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">Tlatelolco_Born</span><span class="timestamp">54 minutes ago</span></div>
+    <div class="comment-text">Because if he showed us 1519 this would be a video about the Spanish. This is a video about us.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">48 minutes ago</span></div>
+    <div class="comment-text">he showed us the mammoth before it was the last mammoth too. he always shows you the thing before he shows you what happened to it. he showed us antietam without showing us the war. he showed us db cooper alive. he showed us earhart flying. he always gives you the person before he gives you the ending. because if he gives you the ending first you never really see the person.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>187,600</div>
+    </div>
+  </div>
+</div>
+
+<!-- WhyNot1519 reply -->
+<div class="comment reply">
+  <div class="avatar small">W</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">WhyNot1519</span><span class="timestamp">41 minutes ago</span></div>
+    <div class="comment-text">okay. I understand now. thank you.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- first_time_here_sofia — top level -->
+<div class="comment">
+  <div class="avatar">F</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">first_time_here_sofia</span><span class="timestamp">1 hour 8 minutes ago</span></div>
+    <div class="comment-text">I found this channel this morning through the news. I'm Mexican. I live in Mexico City. I've never heard of this channel before today. I watched all the videos in order like someone in the comments told me to. It took me four hours. I watched a soldier in a cornfield and a mammoth calling into an empty island and gladiators walking free and a woman flying over the Pacific and a boy in a cave pressing his hand against a wall. And then I watched my city. My city was the last one. I don't know if that was planned. It felt planned. It felt like he saved it for me. I know that's not rational. I don't care.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,300</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">54 minutes ago</span></div>
+    <div class="comment-text">it was planned. and it was for you. welcome.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">49 minutes ago</span></div>
+    <div class="comment-text">He always knows who the last video is for. Welcome.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">43 minutes ago</span></div>
+    <div class="comment-text">he didn't save it for last. he saved it for when you were ready to see it. which turns out to be now. which turns out to be today. welcome.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender — closing top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">47 minutes ago</span></div>
+    <div class="comment-text">last week he showed us one animal on an empty island. the last of its kind. calling into silence. getting no answer. moving on because that's what you do on a tuesday.<br><br>this week he shows us two hundred thousand people on an island in a lake. the greatest city in the world. a market so loud you could hear it from the shore. a boy who got a bird from a stranger and looked at his father first.<br><br>the mammoth didn't know it was the last.<br>the city didn't know it was seventy years from the end.<br><br>he keeps showing us the thing that doesn't know yet.<br>and we keep watching because we don't know either.<br>none of us know.<br>that's the whole point.<br>that's always been the whole point.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>312,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">38 minutes ago</span></div>
+    <div class="comment-text">None of us know. And we build our causeways anyway.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>198,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- TemporalMechanics_PhD reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">34 minutes ago</span></div>
+    <div class="comment-text">and we fill our markets anyway. and we teach our sons to check with their fathers before they accept something from a stranger. and we sweep already clean steps because they are ours to keep.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>167,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- VeteranTeacher_MrKowalski reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/VeteranTeacher_MrKowalski.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">VeteranTeacher_MrKowalski</span><span class="timestamp">29 minutes ago</span></div>
+    <div class="comment-text">and we build things across lakes because we know we're worth building them for.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- MargaretFrom_Aberdeen reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MargaretFrom_Aberdeen.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MargaretFrom_Aberdeen</span><span class="timestamp">24 minutes ago</span></div>
+    <div class="comment-text">and we watch. we keep watching. that's our part in it.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>156,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- Tlatelolco_Born reply -->
+<div class="comment reply">
+  <div class="avatar small">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">Tlatelolco_Born</span><span class="timestamp">19 minutes ago</span></div>
+    <div class="comment-text">somos Tenochtitlan. siempre hemos sido Tenochtitlan.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>189,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- first_time_here_sofia reply -->
+<div class="comment reply">
+  <div class="avatar small">F</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">first_time_here_sofia</span><span class="timestamp">14 minutes ago</span></div>
+    <div class="comment-text">siempre.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>143,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">9 minutes ago</span></div>
+    <div class="comment-text">yeah.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,400</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
