@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: auto; overflow: visible; }
+  body { background: #ffffff; color: #0f0f0f; font-family: Roboto, Arial, sans-serif; padding: 24px; max-width: 800px; }
+
+  .post-header { margin-bottom: 24px; border-bottom: 2px solid #edeff1; padding-bottom: 16px; }
+  .subreddit { font-size: 15px; font-weight: 700; color: #0079d3; margin-bottom: 4px; }
+  .post-title { font-size: 22px; font-weight: 700; color: #0f0f0f; margin-bottom: 6px; line-height: 1.4; }
+  .post-meta { font-size: 14px; color: #878a8c; margin-bottom: 12px; }
+  .post-meta span { margin-right: 12px; }
+  .post-body { font-size: 17px; color: #1c1c1c; line-height: 1.7; margin-bottom: 8px; }
+  .post-body .es { font-style: italic; color: #aaaaaa; }
+  .post-link { font-size: 15px; color: #0079d3; margin-bottom: 16px; display: block; }
+  .post-stats { font-size: 14px; color: #878a8c; }
+
+  .comments-header { font-size: 18px; font-weight: 700; color: #0f0f0f; margin: 24px 0 16px; border-bottom: 1px solid #edeff1; padding-bottom: 10px; }
+
+  .comment { margin-bottom: 20px; padding-left: 16px; border-left: 2px solid #edeff1; }
+  .comment.reply { margin-left: 24px; margin-top: 12px; }
+  .comment.reply-2 { margin-left: 48px; margin-top: 12px; }
+
+  .comment-meta { font-size: 14px; margin-bottom: 6px; }
+  .username { font-weight: 700; color: #0079d3; }
+  .username.thr { color: #065fd4; }
+  .vote-count { color: #ff4500; font-weight: 700; margin-left: 8px; }
+  .timestamp { color: #878a8c; margin-left: 8px; }
+
+  .comment-text { font-size: 17px; color: #1c1c1c; line-height: 1.7; margin-bottom: 8px; }
+  .comment-text .es { font-style: italic; color: #aaaaaa; }
+  .comment-text .thr-text { font-style: italic; }
+
+  .comment-actions { font-size: 13px; color: #878a8c; display: flex; gap: 16px; }
+  .comment-actions span { cursor: pointer; }
+  .comment-actions span:hover { color: #0f0f0f; }
+
+  .divider { border: none; border-top: 1px solid #edeff1; margin: 24px 0; }
+</style>
+</head>
+<body>
+
+<div class="post-header">
+  <div class="subreddit">r/mexico</div>
+  <div class="post-title">Este canal acaba de mostrar Tenochtitlan y no sé cómo procesar esto | This channel just showed Tenochtitlan and I don't know how to process this</div>
+  <div class="post-meta">
+    <span>Posted by <span style="color:#0079d3;font-weight:600;">u/chilango_de_hueso</span></span>
+    <span>6 hours ago</span>
+    <span style="color:#ff4500;font-weight:700;">47,832 upvotes</span>
+  </div>
+  <div class="post-body">
+    <span class="es">Para los que no conocen el canal: The Historical Record es un canal de YouTube anónimo que ha estado publicando videos de momentos históricos desde 2024. Nadie sabe quién lo maneja ni cómo obtienen el footage. Esta mañana publicaron Tenochtitlan en 1450.</span>
+    <br><br>
+    For those who don't know the channel: The Historical Record is an anonymous YouTube channel that has been posting videos of historical moments since 2024. Nobody knows who runs it or how they get the footage. This morning they posted Tenochtitlan in 1450.
+    <br><br>
+    El video: <a class="post-link" href="#">[link]</a>
+    I'll be in the comments. Still processing.
+  </div>
+  <div class="post-stats">47,832 upvotes · 4,832 comments · Share · Save</div>
+</div>
+
+<div class="comments-header">Top Comments</div>
+
+<!-- xochimilco_forever -->
+<div class="comment">
+  <div class="comment-meta">
+    <span class="username">u/xochimilco_forever</span>
+    <span class="vote-count">34,201 upvotes</span>
+    <span class="timestamp">6 hours ago</span>
+  </div>
+  <div class="comment-text">
+    <span class="es">Viví en Tlatelolco toda mi vida. El barrio. La plaza. Paso por ahí cada semana. Y nunca — nunca — lo había visto como un lugar vivo. Siempre fue historia. Siempre fue pasado. Esta mañana fue real por primera vez.</span>
+    <br><br>
+    I've lived in Tlatelolco my whole life. The neighborhood. The plaza. I walk through it every week. And never — never — had I seen it as a living place. It was always history. It was always the past. This morning it was real for the first time.
+    <br><br>
+    <span class="es">No sé si eso es hermoso o si me parte el corazón. Creo que es las dos cosas.</span>
+    <br><br>
+    I don't know if that's beautiful or if it breaks my heart. I think it's both.
+  </div>
+  <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+
+  <div class="comment reply">
+    <div class="comment-meta">
+      <span class="username">u/defeña_orgullosa</span>
+      <span class="vote-count">18,400 upvotes</span>
+      <span class="timestamp">5 hours ago</span>
+    </div>
+    <div class="comment-text">
+      <span class="es">Las dos cosas. Siempre las dos cosas con este canal.</span>
+      <br><br>
+      Both things. It's always both things with this channel.
+    </div>
+    <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+  </div>
+
+  <div class="comment reply">
+    <div class="comment-meta">
+      <span class="username">u/chilango_de_hueso</span>
+      <span class="vote-count">12,300 upvotes</span>
+      <span class="timestamp">5 hours ago</span>
+    </div>
+    <div class="comment-text">
+      <span class="es">"Siempre las dos cosas" debería ser el nombre del canal honestamente</span>
+      <br><br>
+      "Always both things" should honestly be the name of the channel.
+    </div>
+    <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- historia_viva_mx -->
+<div class="comment">
+  <div class="comment-meta">
+    <span class="username">u/historia_viva_mx</span>
+    <span class="vote-count">29,400 upvotes</span>
+    <span class="timestamp">6 hours ago</span>
+  </div>
+  <div class="comment-text">
+    <span class="es">Soy arqueóloga. Trabajo en proyectos de rescate en la Ciudad de México — literalmente excavamos el lago cada vez que alguien construye algo nuevo en el centro. He pasado diez años sacando fragmentos de Tenochtitlan del subsuelo.</span>
+    <br><br>
+    I'm an archaeologist. I work on rescue excavation projects in Mexico City — we literally dig up the lake every time someone builds something new downtown. I've spent ten years pulling fragments of Tenochtitlan out of the ground.
+    <br><br>
+    <span class="es">Esta mañana vi el tzompantli en la esquina noreste del recinto ceremonial. Más pequeño que el que describen las fuentes españolas de 1519. Consistente con 1450. He estado buscando esa configuración específica en nuestra documentación durante años.</span>
+    <br><br>
+    This morning I saw the tzompantli at the northeast corner of the ceremonial precinct. Smaller than what the Spanish sources describe in 1519. Consistent with 1450. I've been looking for that specific configuration in our documentation for years.
+    <br><br>
+    <span class="es">No tengo más palabras por ahora. Voy a ver el video otra vez.</span>
+    <br><br>
+    I have no more words right now. I'm going to watch the video again.
+  </div>
+  <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+
+  <div class="comment reply">
+    <div class="comment-meta">
+      <span class="username">u/tepito_represent</span>
+      <span class="vote-count">14,200 upvotes</span>
+      <span class="timestamp">5 hours ago</span>
+    </div>
+    <div class="comment-text">
+      <span class="es">El hecho de que los arqueólogos sigan encontrando cosas nuevas en el video horas después... este canal siempre hace eso. Siempre hay algo más.</span>
+      <br><br>
+      The fact that archaeologists are still finding new things in the video hours later... this channel always does that. There's always something more.
+    </div>
+    <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- norteño_confundido -->
+<div class="comment">
+  <div class="comment-meta">
+    <span class="username">u/norteño_confundido</span>
+    <span class="vote-count">22,100 upvotes</span>
+    <span class="timestamp">5 hours ago</span>
+  </div>
+  <div class="comment-text">
+    <span class="es">Honestamente pregunta sincera de alguien que creció en Monterrey y no en el D.F.: ¿por qué siento que este video me pertenece más que cualquier cosa que aprendí en la escuela sobre esto? Nunca me identifiqué con Tenochtitlan. Era historia de libro de texto. Esta mañana lloré en el metro y no sé bien por qué.</span>
+    <br><br>
+    Honest sincere question from someone who grew up in Monterrey and not in the D.F.: why does this video feel more mine than anything I learned in school about this? I never identified with Tenochtitlan. It was textbook history. This morning I cried on the metro and I don't really know why.
+  </div>
+  <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+
+  <div class="comment reply">
+    <div class="comment-meta">
+      <span class="username">u/defeña_orgullosa</span>
+      <span class="vote-count">31,200 upvotes</span>
+      <span class="timestamp">5 hours ago</span>
+    </div>
+    <div class="comment-text">
+      <span class="es">Porque la escuela te enseñó la ciudad como concepto. El canal te mostró la ciudad como lugar. Son cosas completamente diferentes.</span>
+      <br><br>
+      Because school taught you the city as a concept. The channel showed you the city as a place. Those are completely different things.
+    </div>
+    <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+  </div>
+
+  <div class="comment reply">
+    <div class="comment-meta">
+      <span class="username">u/norteño_confundido</span>
+      <span class="vote-count">19,800 upvotes</span>
+      <span class="timestamp">4 hours ago</span>
+    </div>
+    <div class="comment-text">
+      <span class="es">Sí. Eso es exactamente. Gracias.</span>
+      <br><br>
+      Yes. That's exactly it. Thank you.
+    </div>
+    <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- nahua_diaspora -->
+<div class="comment">
+  <div class="comment-meta">
+    <span class="username">u/nahua_diaspora</span>
+    <span class="vote-count">28,900 upvotes</span>
+    <span class="timestamp">5 hours ago</span>
+  </div>
+  <div class="comment-text">
+    <span class="es">Voy a decir algo que tal vez no sea popular pero que necesito decir.</span>
+    <br><br>
+    I'm going to say something that maybe isn't popular but that I need to say.
+    <br><br>
+    <span class="es">Me alegra que el mundo esté viendo esto. Me alegra que Diego Luna haya llorado. Me alegra que once millones de personas hayan visto Tenochtitlan esta mañana y entendieran que era real.</span>
+    <br><br>
+    I'm glad the world is seeing this. I'm glad Diego Luna cried. I'm glad eleven million people saw Tenochtitlan this morning and understood it was real.
+    <br><br>
+    <span class="es">Y también: llevamos décadas diciéndoles que era real. Los académicos indígenas. Los activistas. Las comunidades que llevan siglos manteniendo viva esta memoria. Nadie nos escuchaba de la misma manera. Y llega un canal anónimo de YouTube y en catorce minutos hace lo que nosotros no pudimos hacer.</span>
+    <br><br>
+    And also: we've been telling them it was real for decades. Indigenous scholars. Activists. Communities that have kept this memory alive for centuries. Nobody listened the same way. And an anonymous YouTube channel comes along and in fourteen minutes does what we couldn't do.
+    <br><br>
+    <span class="es">No digo que sea malo. Digo que es complicado. Y que la complejidad merece espacio en esta conversación.</span>
+    <br><br>
+    I'm not saying it's bad. I'm saying it's complicated. And that the complexity deserves space in this conversation.
+  </div>
+  <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+
+  <div class="comment reply">
+    <div class="comment-meta">
+      <span class="username">u/xochimilco_forever</span>
+      <span class="vote-count">24,100 upvotes</span>
+      <span class="timestamp">4 hours ago</span>
+    </div>
+    <div class="comment-text">
+      <span class="es">Tienes razón y mereces más upvotes de los que estás recibiendo.</span>
+      <br><br>
+      You're right and you deserve more upvotes than you're getting.
+    </div>
+    <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+  </div>
+
+  <div class="comment reply">
+    <div class="comment-meta">
+      <span class="username">u/historia_viva_mx</span>
+      <span class="vote-count">19,300 upvotes</span>
+      <span class="timestamp">4 hours ago</span>
+    </div>
+    <div class="comment-text">
+      <span class="es">Como arqueóloga que ha estado gritando sobre esto durante diez años: tienes completamente la razón. El canal hizo algo importante. El hecho de que nosotros no pudiéramos hacerlo también es importante. Ambas cosas son verdad.</span>
+      <br><br>
+      As an archaeologist who has been shouting about this for ten years: you are completely right. The channel did something important. The fact that we couldn't do it is also important. Both things are true.
+    </div>
+    <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+  </div>
+
+  <div class="comment reply">
+    <div class="comment-meta">
+      <span class="username">u/chilango_de_hueso</span>
+      <span class="vote-count">15,600 upvotes</span>
+      <span class="timestamp">4 hours ago</span>
+    </div>
+    <div class="comment-text">
+      <span class="es">Este comentario es el más importante del hilo. Gracias por escribirlo.</span>
+      <br><br>
+      This comment is the most important in the thread. Thank you for writing it.
+    </div>
+    <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- just_a_gringo_here -->
+<div class="comment">
+  <div class="comment-meta">
+    <span class="username">u/just_a_gringo_here</span>
+    <span class="vote-count">8,900 upvotes</span>
+    <span class="timestamp">4 hours ago</span>
+  </div>
+  <div class="comment-text">
+    American here, hope it's okay to comment. I watched the video this morning and then spent two hours reading about Lake Texcoco and what happened to it. I had no idea. I genuinely had no idea that Mexico City was built on a drained lake, that it's still sinking, that the drainage was a deliberate colonial project. I took a Latin American history class in college. None of this was in it.
+    <br><br>
+    I just wanted to say I'm sorry for not knowing. And thank you for this thread.
+  </div>
+  <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+
+  <div class="comment reply">
+    <div class="comment-meta">
+      <span class="username">u/defeña_orgullosa</span>
+      <span class="vote-count">22,400 upvotes</span>
+      <span class="timestamp">4 hours ago</span>
+    </div>
+    <div class="comment-text">
+      Don't apologize. Learn. Come back. Bring people.
+      <br><br>
+      That's all any of us can ask.
+    </div>
+    <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+  </div>
+
+  <div class="comment reply">
+    <div class="comment-meta">
+      <span class="username">u/nahua_diaspora</span>
+      <span class="vote-count">18,700 upvotes</span>
+      <span class="timestamp">3 hours ago</span>
+    </div>
+    <div class="comment-text">
+      What she said. Welcome.
+    </div>
+    <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- tepito_represent — reed bird thread -->
+<div class="comment">
+  <div class="comment-meta">
+    <span class="username">u/tepito_represent</span>
+    <span class="vote-count">11,200 upvotes</span>
+    <span class="timestamp">3 hours ago</span>
+  </div>
+  <div class="comment-text">
+    <span class="es">¿Alguien más sigue pensando en el niño del pájaro de carrizo?</span>
+    <br><br>
+    Is anyone else still thinking about the boy with the reed bird?
+  </div>
+  <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+
+  <div class="comment reply">
+    <div class="comment-meta">
+      <span class="username">u/xochimilco_forever</span>
+      <span class="vote-count">19,800 upvotes</span>
+      <span class="timestamp">3 hours ago</span>
+    </div>
+    <div class="comment-text">
+      <span class="es">Todos. Todos estamos pensando en el niño del pájaro de carrizo.</span>
+      <br><br>
+      Everyone. We're all thinking about the boy with the reed bird.
+    </div>
+    <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+  </div>
+
+  <div class="comment reply">
+    <div class="comment-meta">
+      <span class="username">u/norteño_confundido</span>
+      <span class="vote-count">14,300 upvotes</span>
+      <span class="timestamp">3 hours ago</span>
+    </div>
+    <div class="comment-text">
+      <span class="es">Miró a su papá primero antes de tomarlo.</span>
+      <br><br>
+      He looked at his dad first before he took it.
+    </div>
+    <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+  </div>
+
+  <div class="comment reply">
+    <div class="comment-meta">
+      <span class="username">u/tepito_represent</span>
+      <span class="vote-count">28,900 upvotes</span>
+      <span class="timestamp">3 hours ago</span>
+    </div>
+    <div class="comment-text">
+      <span class="es">Sí. Eso es lo que nos lleva a todos ¿verdad? No el mercado. No el templo. No los sesenta mil personas. Un niño que mira a su papá antes de aceptar algo de un extraño.</span>
+      <br><br>
+      Yeah. That's what gets all of us isn't it. Not the market. Not the temple. Not the sixty thousand people. A kid who looks at his dad before accepting something from a stranger.
+    </div>
+    <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+  </div>
+
+  <div class="comment reply">
+    <div class="comment-meta">
+      <span class="username">u/chilango_de_hueso</span>
+      <span class="vote-count">31,400 upvotes</span>
+      <span class="timestamp">2 hours ago</span>
+    </div>
+    <div class="comment-text">
+      <span class="es">Ese gesto tiene diez mil años de antigüedad por lo menos. Y lo seguimos haciendo. Todos lo seguimos haciendo.</span>
+      <br><br>
+      That gesture is at least ten thousand years old. And we still do it. We all still do it.
+    </div>
+    <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- TheHistoricalRecord_himself -->
+<div class="comment">
+  <div class="comment-meta">
+    <span class="username thr">u/TheHistoricalRecord_himself</span>
+    <span class="vote-count" style="color:#065fd4;">1,847,293 upvotes</span>
+    <span class="timestamp">just now</span>
+  </div>
+  <div class="comment-text thr-text">
+    <span class="es" style="color:#555555;">Su nombre era Itzli. Tenía nueve años. El pájaro duró tres semanas.</span>
+    <br><br>
+    His name was Itzli. He was nine years old. The bird lasted three weeks.
+  </div>
+  <div class="comment-actions"><span>Reply</span><span>Share</span><span>Save</span></div>
+</div>
+
+<hr class="divider">
+<div style="font-size:14px;color:#878a8c;margin-top:16px;">4,832 comments · Share · Save</div>
+
+</body>
+</html>
