@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: auto; overflow: visible; }
+  body { background: #ffffff; color: #0f0f0f; font-family: Roboto, Arial, sans-serif; padding: 24px; }
+  .comments-header { margin-bottom: 28px; }
+  .comments-count { font-size: 22px; font-weight: 500; }
+  .comment { display: flex; gap: 16px; margin-bottom: 28px; }
+  .comment.reply { margin-left: 56px; margin-bottom: 16px; }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 500; flex-shrink: 0; text-transform: uppercase; color: #555; }
+  .avatar.small { width: 30px; height: 30px; font-size: 13px; }
+  .comment-body { flex: 1; }
+  .comment-meta { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+  .username { font-size: 18px; font-weight: 600; color: #0f0f0f; }
+  .timestamp { font-size: 16px; color: #666; }
+  .comment-text { font-size: 19px; color: #111; line-height: 1.7; margin-bottom: 10px; }
+  .comment-actions { display: flex; align-items: center; gap: 16px; }
+  .action { display: flex; align-items: center; gap: 4px; font-size: 16px; color: #555; cursor: pointer; }
+  .action svg { width: 18px; height: 18px; fill: #555; }
+</style>
+</head>
+<body>
+
+<div class="comments-header">
+  <div class="comments-count">Comments</div>
+</div>
+
+<!-- PleistoceneNerd_Actually — top level -->
+<div class="comment">
+  <div class="avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">3 hours ago</span></div>
+    <div class="comment-text">okay so I need everyone to just sit with the first two minutes before we talk about anything else. just the forest. just the ferns and the cycads and the light coming through. because before you get to what this video is about you need to understand what the world looked like when it happened. this is not a jungle. this is not a rainforest. this is a Cretaceous conifer forest and it is one of the strangest places that has ever existed on this planet and he just walked us through it like it was a tuesday morning stroll and I am not okay.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">2 hours 48 minutes ago</span></div>
+    <div class="comment-text">I watched the first two minutes three times before I let myself keep going. you're right. you have to earn the flower.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>44,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- PleistoceneNerd_Actually reply -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">2 hours 41 minutes ago</span></div>
+    <div class="comment-text">you have to earn the flower. yes. exactly that.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>38,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">2 hours 52 minutes ago</span></div>
+    <div class="comment-text">The dragonfly.<br><br>It held still in the light for a moment and then it was gone. And the camera watched it go. Just followed it until it disappeared into the green and then came back down to the forest floor like someone who got distracted for a second and remembered where they were going.<br><br>I've watched this four times and every time the dragonfly goes I hold my breath a little. Like it might not come back. Like the forest might close over the gap it left.<br><br>It always comes back. The forest always closes.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>156,700</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CarolHineyMarsh reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CarolHineyMarsh.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CarolHineyMarsh</span><span class="timestamp">2 hours 38 minutes ago</span></div>
+    <div class="comment-text">The way it tilted up to follow it. And then came back down. That's not a camera. That's curiosity.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">2 hours 29 minutes ago</span></div>
+    <div class="comment-text">Carol. Yes. That's exactly the word.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,600</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">2 hours 18 minutes ago</span></div>
+    <div class="comment-text">curiosity. that's what this whole channel is. just curiosity. moving through time looking at things that interest it and stopping when something interests it more than the rest.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>98,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- CretaceousEcology_Prof_Okafor — top level -->
+<div class="comment">
+  <div class="avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CretaceousEcology_Prof_Okafor</span><span class="timestamp">2 hours 44 minutes ago</span></div>
+    <div class="comment-text">The dragonfly wingspan. I have to say something about the dragonfly wingspan. Modern dragonflies top out around four inches. The one in this footage is roughly twice that. Consistent with Cretaceous genera. Nobody put a modern dragonfly in this forest. He put the right dragonfly in the right forest and most people won't notice and it doesn't matter that most people won't notice because it's right anyway.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,300</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- PleistoceneNerd_Actually reply -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">2 hours 31 minutes ago</span></div>
+    <div class="comment-text">it's always right. the arctic poppies were right. the mammoth's coat shedding was right. the tusk wear was right. it is always right because there is only one way it is always right.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>44,100</div>
+    </div>
+  </div>
+</div>
+
+<!-- CretaceousEcology_Prof_Okafor reply -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CretaceousEcology_Prof_Okafor</span><span class="timestamp">2 hours 22 minutes ago</span></div>
+    <div class="comment-text">yes. I know. I've been thinking about that since the mammoth video. I'm still thinking about it.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>38,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- VeteranTeacher_MrKowalski — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/VeteranTeacher_MrKowalski.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">VeteranTeacher_MrKowalski</span><span class="timestamp">2 hours 31 minutes ago</span></div>
+    <div class="comment-text">I showed my students the first four minutes today. Just the forest. The ferns. The dragonfly. Before the flower appears. I asked them what they thought they were looking at. The boy raised his hand. He said it looks like somewhere that doesn't know anyone is watching. I asked him what he meant. He said most places we see on screens know they're being seen. This one doesn't. It's just being itself.<br><br>I asked him if that changed how he felt watching it. He thought about it. He said yes. He said it felt like finding something private. Like you weren't supposed to be there but you were glad you were.<br><br>Twenty two years. I am writing that down.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,900</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">2 hours 17 minutes ago</span></div>
+    <div class="comment-text">That boy keeps finding the center of it.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- MargaretFrom_Aberdeen reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MargaretFrom_Aberdeen.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MargaretFrom_Aberdeen</span><span class="timestamp">2 hours 8 minutes ago</span></div>
+    <div class="comment-text">A place that doesn't know anyone is watching. He found the one boy who could say it out loud.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>98,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- Cretaceous_Dr_Lena_Park — top level -->
+<div class="comment">
+  <div class="avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">Cretaceous_Dr_Lena_Park</span><span class="timestamp">2 hours 11 minutes ago</span></div>
+    <div class="comment-text">I watched the whole thing before I let myself say anything. I needed to just watch it first.<br><br>The stem. The leaf morphology. The reproductive structures along the upper stem — those pale clustered formations that are not quite flowers the way we think of flowers but are the first iteration of the mechanism that will become every flower that has ever existed. The aquatic habitat. The associated vegetation placing this in northeastern China within fifty kilometers of where the earliest Archaefructus fossils were recovered.<br><br>I have held those fossils. I have spent fifteen years trying to picture this plant alive. I did not expect to see it this way. I did not expect to see it at all.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- PleistoceneNerd_Actually reply -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">1 hour 58 minutes ago</span></div>
+    <div class="comment-text">Dr. Park. Welcome. It never gets easier. It just gets more real.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- Cretaceous_Dr_Lena_Park reply -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">Cretaceous_Dr_Lena_Park</span><span class="timestamp">1 hour 49 minutes ago</span></div>
+    <div class="comment-text">That's exactly what it is. More real. Yes.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>44,100</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok — beetle top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 54 minutes ago</span></div>
+    <div class="comment-text">The beetle.<br><br>It climbed the stem and its antennae moved and it stayed for a moment and then it went on.<br><br>It was the first creature in the history of the world to find a flower. And it didn't know. It just felt something slightly different and paused and then went back to its day.<br><br>I keep thinking about how many times I've walked past the first of something and not known. How many times any of us have.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>198,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CarolHineyMarsh reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CarolHineyMarsh.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CarolHineyMarsh</span><span class="timestamp">1 hour 41 minutes ago</span></div>
+    <div class="comment-text">Elias walked into that cornfield not knowing what it would mean. The beetle and Elias. Neither of them knew what moment they were in.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 33 minutes ago</span></div>
+    <div class="comment-text">The beetle and Elias. Carol that's everything.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>156,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">1 hour 24 minutes ago</span></div>
+    <div class="comment-text">the beetle and Elias and the mammoth calling into silence and Itzli looking at his father before he took the bird. none of them knew what moment they were in. that's the only kind of moment there is. you're always in the one you don't know yet.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>178,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">1 hour 11 minutes ago</span></div>
+    <div class="comment-text">yeah</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- SandwichShopKevin — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/SandwichShopKevin.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SandwichShopKevin</span><span class="timestamp">1 hour 38 minutes ago</span></div>
+    <div class="comment-text">My wife watched this at 6am before I was up. When I came downstairs she was at the kitchen table with her coffee gone cold. I asked if she was okay. She said yes. She said she was thinking about what the beetle did after. After it left the flower. It just went back to whatever it was doing. It found the most important thing in the history of the world and then it went back to work.<br><br>She said that's not sad. She said that's just what life is. The extraordinary thing and then you go back to making sandwiches. She said both matter. Both are real.<br><br>I married a very smart woman.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,200</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 22 minutes ago</span></div>
+    <div class="comment-text">The extraordinary thing and then the sandwiches. She needs to be posting every video.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>156,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">1 hour 14 minutes ago</span></div>
+    <div class="comment-text">the sublime and the copper. the extraordinary thing and the sandwiches. she keeps saying the same true thing in different words.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- RandomGuyFromTulsa — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/RandomGuyFromTulsa.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">RandomGuyFromTulsa</span><span class="timestamp">1 hour 28 minutes ago</span></div>
+    <div class="comment-text">My daughter is twelve now. I watched it alone first. I wasn't sure about this one. Not because it's upsetting. Because it's so quiet. I didn't know if twelve was old enough for something this quiet.<br><br>Then I thought about the beetle. And I called her in.<br><br>She watched the whole thing without saying anything. When it ended she said dad the flower didn't know it was the first one did it. I said no. She said that's okay. I asked her why. She said because we know. She said someone always finds out eventually. We just have to make sure we're paying attention.<br><br>She's twelve.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>56,700</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- MargaretFrom_Aberdeen reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MargaretFrom_Aberdeen.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MargaretFrom_Aberdeen</span><span class="timestamp">1 hour 14 minutes ago</span></div>
+    <div class="comment-text">Someone always finds out eventually. We just have to make sure we're paying attention. I'm going to think about that for a long time.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- CarolHineyMarsh reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CarolHineyMarsh.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CarolHineyMarsh</span><span class="timestamp">1 hour 6 minutes ago</span></div>
+    <div class="comment-text">Please never stop bringing her.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- OldRomeNewTricks — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/OldRomeNewTricks.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">OldRomeNewTricks</span><span class="timestamp">1 hour 19 minutes ago</span></div>
+    <div class="comment-text">the last mammoth alone on an island.<br>the first flower alone at a lake edge.<br><br>he keeps going to the edges. the moments where something is ending or beginning with nothing there to see it.<br><br>except him.<br>always him.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,200</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">1 hour 4 minutes ago</span></div>
+    <div class="comment-text">always him</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- PhilosophyBro_Actually — closing top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/PhilosophyBro_Actually.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PhilosophyBro_Actually</span><span class="timestamp">11 minutes ago</span></div>
+    <div class="comment-text">I've been sitting with this for three days.<br><br>Every video this channel has made has shown us a moment witnessed by someone. Soldiers who saw each other. Gladiators watched by sixty thousand people. A city of two hundred thousand people on a Tuesday. A composer whose music would be heard by everyone who came after. Even the mammoth — he called out. He was trying to be witnessed. The calling was the point.<br><br>This one is different.<br><br>The flower opened and nothing knew. The beetle found it and didn't know what it had found. The dragonfly passed over it and kept going. For one hundred and thirty million years that flower opened and closed and seeded and spread and became every flower that has ever existed and not one mind in the universe understood what had started there. On that morning. In that mud.<br><br>Except his.<br><br>And then I think about the mammoth. Alone on that island. Calling into silence.<br><br>And I think about who else was there.<br><br>And I find myself with a question I don't know how to finish. What is it like to have been the only witness to the first flower. To have carried that morning as a private memory for one hundred and thirty million years. To have been in that forest alone — if alone means anything when you are the only mind that has ever been there — and watched something begin that you knew would change everything.<br><br>I don't have an answer.<br><br>I'm leaving it here because it belongs here and I don't know where else it goes.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>312,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
