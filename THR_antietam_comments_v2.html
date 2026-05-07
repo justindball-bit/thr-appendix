@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: auto; overflow: visible; }
+  body { background: #ffffff; color: #0f0f0f; font-family: Roboto, Arial, sans-serif; padding: 24px; }
+  .comments-header { margin-bottom: 28px; }
+  .comments-count { font-size: 22px; font-weight: 500; color: #0f0f0f; }
+  .comment { display: flex; gap: 16px; margin-bottom: 28px; }
+  .comment.reply { margin-left: 56px; margin-bottom: 16px; }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 500; color: #0f0f0f; flex-shrink: 0; text-transform: uppercase; }
+  .avatar.small { width: 30px; height: 30px; font-size: 13px; }
+  .comment-body { flex: 1; }
+  .comment-meta { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+  .username { font-size: 18px; font-weight: 600; color: #0f0f0f; }
+  .timestamp { font-size: 16px; color: #666; }
+  .comment-text { font-size: 19px; color: #111; line-height: 1.7; margin-bottom: 10px; }
+  .comment-actions { display: flex; align-items: center; gap: 16px; }
+  .action { display: flex; align-items: center; gap: 4px; font-size: 16px; color: #555; cursor: pointer; }
+  .action svg { width: 18px; height: 18px; fill: #555; }
+</style>
+</head>
+<body>
+
+<div class="comments-header">
+  <div class="comments-count">Comments</div>
+</div>
+
+<!-- CornfieldGhost -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">3 hours ago</span></div>
+    <div class="comment-text">I've watched this four times. I can't explain the last two minutes. I genuinely cannot explain it. 👍</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>4.2k</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- FilmMFA_Davis -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/FilmMFA_Davis.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">FilmMFA_Davis</span><span class="timestamp">3 hours ago</span></div>
+    <div class="comment-text">This is an incredible technical achievement but let's be clear, this is a film. A very good film. The mist alone required serious production resources. Someone spent real money on this.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>891</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CivilWarBuffActual reply -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CivilWarBuffActual</span><span class="timestamp">2 hours ago</span></div>
+    <div class="comment-text">Then where are the credits. Where is the production company. Where is literally any trace of this being made.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>2.1k</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- FilmMFA_Davis reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/FilmMFA_Davis.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">FilmMFA_Davis</span><span class="timestamp">2 hours ago</span></div>
+    <div class="comment-text">Anonymous productions exist. ARGs exist. This is clearly the beginning of something.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>203</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- SGT_Harlow_Ret -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/SGT_Harlow_Ret.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SGT_Harlow_Ret</span><span class="timestamp">2 hours ago</span></div>
+    <div class="comment-text">I did two tours in Fallujah. I don't talk about it much. I don't know what this is but those men's faces are real. You can't act that.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>11.4k</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- HistoryNerdEmma -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HistoryNerdEmma</span><span class="timestamp">2 hours ago</span></div>
+    <div class="comment-text">The uniforms are wrong in all the right ways. That's not a costume department. That's actual mid war Union issue with campaign wear. Someone did YEARS of research for twelve minutes of content with no monetization.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>3.8k</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- AntietamReenactor_17thMaine — NEW -->
+<div class="comment">
+  <div class="avatar">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AntietamReenactor_17thMaine</span><span class="timestamp">1 hour 48 minutes ago</span></div>
+    <div class="comment-text">I have stood in Miller's Cornfield more times than I can count. I have walked that ground in September. I know the specific angle of that treeline from the Union position. I know how the mist sits in the low places before the sun burns it off. I know what the corn looks like at that height in that month because we plant it the same way every year for the living history events.<br><br>Everything in this footage is correct. Not approximately correct. Exactly correct. The treeline angle. The way the mist holds at the field edge. The height of the corn. The direction of the morning light coming from the east-southeast which is exactly where it would be at 6AM on September 17th.<br><br>I have been doing this for nineteen years. I have never seen a reconstruction that got all of it right. This isn't a reconstruction. I don't know what it is but it isn't a reconstruction.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>28,900</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- HistoryNerdEmma reply to reenactor -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HistoryNerdEmma</span><span class="timestamp">1 hour 38 minutes ago</span></div>
+    <div class="comment-text">The uniforms too. You'd know better than anyone — the campaign wear on those jackets. That's not a costume department.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>18,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- AntietamReenactor reply -->
+<div class="comment reply">
+  <div class="avatar small">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AntietamReenactor_17thMaine</span><span class="timestamp">1 hour 29 minutes ago</span></div>
+    <div class="comment-text">The jackets are mid-war issue. The wear pattern on the older man's is consistent with someone who has been in the field since at least spring. The younger man's is newer — he joined later. Someone knew that difference and put it on screen. I don't know how. I just know they knew.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>22,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- CivilWarBuffActual reply -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CivilWarBuffActual</span><span class="timestamp">1 hour 18 minutes ago</span></div>
+    <div class="comment-text">The muskets. Can you speak to the muskets.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>14,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- AntietamReenactor reply -->
+<div class="comment reply">
+  <div class="avatar small">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AntietamReenactor_17thMaine</span><span class="timestamp">1 hour 9 minutes ago</span></div>
+    <div class="comment-text">Springfield Model 1861. Standard Union infantry issue at Antietam. Correct weight, correct length, correct way of being carried by men who have been carrying them for months — not like props, like tools they're tired of. That's the detail that gets me. The way they hold them. You can't teach that. That comes from carrying one for a long time.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>19,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- JustARegularDude -->
+<div class="comment">
+  <div class="avatar">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">JustARegularDude</span><span class="timestamp">1 hour ago</span></div>
+    <div class="comment-text">bro I came here from a meme page and now I've been crying for twenty minutes what is happening</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>19.7k</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- DebunkDaily -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/DebunkDaily.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">DebunkDaily</span><span class="timestamp">1 hour ago</span></div>
+    <div class="comment-text">Already working on a full breakdown video. Give me 48 hours. This is impressive but it's smoke and mirrors.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>445</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply to DebunkDaily -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">1 hour ago</span></div>
+    <div class="comment-text">September17_1862 - We'll be here.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>8.9k</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- ProfMMcAllister_HistDept -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/ProfMMcAllister_HistDept.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ProfMMcAllister_HistDept</span><span class="timestamp">45 minutes ago</span></div>
+    <div class="comment-text">I have been teaching the Battle of Antietam for twenty one years. I watched this with my department this morning. We have not reached a consensus. That alone should tell you something.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>6.7k</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CombatTrauma_Dr_Vasquez — NEW -->
+<div class="comment">
+  <div class="avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CombatTrauma_Dr_Vasquez</span><span class="timestamp">18 minutes ago</span></div>
+    <div class="comment-text">I am a clinical psychologist. I specialize in combat trauma. I have worked with veterans for twenty three years.<br><br>The young soldier at the end. After the shell. After he finds the older man. The description everyone keeps using is that his eyes are present but he isn't there. I want to give that a name.<br><br>What you are seeing is acute dissociative response to traumatic loss under ongoing threat. It is one of the most well documented psychological responses in combat literature. The body stays functional — he gets to his feet, he responds to the officer — but the self temporarily evacuates the premises. It is not shock in the medical sense. It is the mind doing exactly what it is supposed to do when reality becomes briefly unprocessable. Protecting itself by creating distance between the person and what just happened.<br><br>What is remarkable about this footage is not that it shows this response. It is that it shows it correctly. The specific quality of that disconnection — present but absent, functional but hollow — is almost impossible to perform convincingly. It is not something you act. It is something that happens to you.<br><br>I don't know what this footage is. I know that young man's face is real.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,200</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">12 minutes ago</span></div>
+    <div class="comment-text">that young soldier at the end. that face. I keep coming back to that face. I hope he made it home.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>31.2k</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- ThreadDetective47 -->
+<div class="comment">
+  <div class="avatar">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ThreadDetective47</span><span class="timestamp">11:47 PM</span></div>
+    <div class="comment-text">His name was Elias Fredrick Hiney. 22 years old. Enlisted August 1862. 12th Massachusetts Infantry. He survived Antietam. He survived the war. He went home to Gloucester and became a fisherman. He died in 1921. He had four children. He made it home.</div>
+    <div class="comment-actions"><span class="action">👍 47.3k</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">4 hours later</span></div>
+    <div class="comment-text">I've been sitting here crying for an hour. Thank you for finding him.</div>
+    <div class="comment-actions"><span class="action">👍 89.1k</span><span class="action">Reply</span></div>
+  </div>
+</div>
+
+</body>
+</html>
