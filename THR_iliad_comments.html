@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: auto; overflow: visible; }
+  body { background: #ffffff; color: #0f0f0f; font-family: Roboto, Arial, sans-serif; padding: 24px; }
+  .comments-header { margin-bottom: 28px; }
+  .comments-count { font-size: 22px; font-weight: 500; }
+  .comment { display: flex; gap: 16px; margin-bottom: 28px; }
+  .comment.reply { margin-left: 56px; margin-bottom: 16px; }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 500; flex-shrink: 0; text-transform: uppercase; color: #555; }
+  .avatar.small { width: 30px; height: 30px; font-size: 13px; }
+  .comment-body { flex: 1; }
+  .comment-meta { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+  .username { font-size: 18px; font-weight: 600; color: #0f0f0f; }
+  .username.thr { color: #065fd4; }
+  .timestamp { font-size: 16px; color: #666; }
+  .comment-text { font-size: 19px; color: #111; line-height: 1.7; margin-bottom: 10px; }
+  .comment-actions { display: flex; align-items: center; gap: 16px; }
+  .action { display: flex; align-items: center; gap: 4px; font-size: 16px; color: #555; cursor: pointer; }
+  .action svg { width: 18px; height: 18px; fill: #555; }
+</style>
+</head>
+<body>
+
+<div class="comments-header">
+  <div class="comments-count">Comments</div>
+</div>
+
+<!-- stalechipdefender — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">2 hours ago</span></div>
+    <div class="comment-text">we followed it back.<br><br>three words. that's all it took. three words in a title card and everything I thought I understood about this channel shifted.<br><br>he didn't know. he had to find it. he had a fragment and a date and a chain of custody and he followed it backward through three thousand years of copying and singing and forgetting and remembering until he found the man at the beginning of it.<br><br>he investigates. he doesn't just arrive. he investigates.<br><br>I've been watching this channel for two years and I just learned something completely new about what it is.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>198,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">1 hour 48 minutes ago</span></div>
+    <div class="comment-text">we followed it back. yeah. that changes things.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- TemporalMechanics_PhD reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">1 hour 41 minutes ago</span></div>
+    <div class="comment-text">think about what that means for someone who can go anywhere in time. he doesn't have to guess which link in the chain is correct. he can go verify every single one. he followed it back not as a metaphor but literally. link by link. copy by copy. singer by singer. all the way to the beach.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">1 hour 33 minutes ago</span></div>
+    <div class="comment-text">and he showed us the process. for the first time. he showed us the work.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- OldRomeNewTricks reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/OldRomeNewTricks.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">OldRomeNewTricks</span><span class="timestamp">1 hour 24 minutes ago</span></div>
+    <div class="comment-text">every video has been an investigation. we just couldn't see the work until now.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- HomericQuestion_Dr_Vasiliou — top level -->
+<div class="comment">
+  <div class="avatar">H</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HomericQuestion_Dr_Vasiliou</span><span class="timestamp">1 hour 58 minutes ago</span></div>
+    <div class="comment-text">I have spent thirty one years on the Homeric question. One poet or many. Oral composition or written. The date. The place. The relationship between the Iliad and the Odyssey. These are questions my field has been arguing about since the 18th century and will argue about long after I am gone.<br><br>I watched this video four times this morning before I could write anything.<br><br>The singer in Chios performing from memory. The way the words come — not recalled but arrived. That is exactly correct. That is exactly what oral-formulaic composition looks like. The epithets. The repeated phrases. The way the meter carries the singer through the difficult passages. Whoever showed us that singer has spent time with someone who actually did this. Not a reconstruction. A performance.<br><br>And Homer. Sitting outside in the evening. Speaking quietly to his student. Not performing. Just speaking the poem the way you speak something that lives inside you. The student listening without writing. Learning the way it was always learned before Ephesus. Before Alexandria. Before any of it.<br><br>I have one question and I don't expect an answer. The student sitting nearby. The one who will carry the poem to Chios. What was his name.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,900</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- PleistoceneNerd_Actually reply -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PleistoceneNerd_Actually</span><span class="timestamp">1 hour 44 minutes ago</span></div>
+    <div class="comment-text">Dr. Vasiliou. Welcome. Different field, same experience. The channel always knows the thing your field has been trying to establish. Every time.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>44,100</div>
+    </div>
+  </div>
+</div>
+
+<!-- HomericQuestion_Dr_Vasiliou reply -->
+<div class="comment reply">
+  <div class="avatar small">H</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HomericQuestion_Dr_Vasiliou</span><span class="timestamp">1 hour 36 minutes ago</span></div>
+    <div class="comment-text">I gathered that from the comment sections of the previous videos. I still wasn't prepared.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>38,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- HistoryNerdEmma reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HistoryNerdEmma</span><span class="timestamp">1 hour 28 minutes ago</span></div>
+    <div class="comment-text">It's always the detail nobody thought to fake. The way the singer performs. That's not something you get right by accident.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>29,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- AlexandriaLibrary_Prof_Chen — top level -->
+<div class="comment">
+  <div class="avatar">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AlexandriaLibrary_Prof_Chen</span><span class="timestamp">1 hour 51 minutes ago</span></div>
+    <div class="comment-text">The scholar at the table in Alexandria. The marginal notes. The way he marks discrepancies between versions without resolving them — just noting them, flagging them, preserving the question alongside the text.<br><br>That is Zenodotus. That is exactly the working method we have reconstructed from what survives of his editorial work. The careful hand. The conservative approach. The refusal to emend when the evidence is unclear.<br><br>Someone has spent time with Zenodotus at work. I have spent twenty years trying to reconstruct that work from fragments and citations and second hand accounts. Twenty years and I still couldn't tell you what his handwriting looked like.<br><br>Now I can.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>56,700</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- HomericQuestion_Dr_Vasiliou reply -->
+<div class="comment reply">
+  <div class="avatar small">H</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HomericQuestion_Dr_Vasiliou</span><span class="timestamp">1 hour 38 minutes ago</span></div>
+    <div class="comment-text">Prof. Chen. I was hoping you'd be here. The question of which scroll he was working from when he made the first critical edition has been open since — well. Since always.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>22,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- AlexandriaLibrary_Prof_Chen reply -->
+<div class="comment reply">
+  <div class="avatar small">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AlexandriaLibrary_Prof_Chen</span><span class="timestamp">1 hour 29 minutes ago</span></div>
+    <div class="comment-text">I know. I watched the provenance sequence three times. The scroll from Ephesus. If that's accurate — and I have no reason to believe it isn't — it rewrites our understanding of how the Alexandrian text was established.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>18,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- AlexandriaLibrary_Prof_Chen reply -->
+<div class="comment reply">
+  <div class="avatar small">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AlexandriaLibrary_Prof_Chen</span><span class="timestamp">1 hour 21 minutes ago</span></div>
+    <div class="comment-text">I need to call some people.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>24,100</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 44 minutes ago</span></div>
+    <div class="comment-text">The soldier on the beach.<br><br>He couldn't stop talking about what he saw. Not because he wanted to make art. Not because he understood what he was doing. Just because it happened to him and he had to put it somewhere outside himself or it would stay inside him forever with no witness.<br><br>He talked around a fire on a beach two years after the war ended and three thousand years later a woman in a conservation lab in London unrolled a piece of papyrus and recognized what she was holding before she finished the first line.<br><br>He made it home. And he brought something home with him that outlasted everything. The walls. The ships. The men who died there. The city itself. All of it gone.<br><br>The talking around the fire survived.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>223,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CarolHineyMarsh reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CarolHineyMarsh.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CarolHineyMarsh</span><span class="timestamp">1 hour 31 minutes ago</span></div>
+    <div class="comment-text">Elias walked into a cornfield and came home and went fishing and died in 1921 and his family still carries him. This soldier walked away from Troy and sat on a beach and talked and his words are still here three thousand years later. Both of them carried something home that was bigger than they knew.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>156,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 22 minutes ago</span></div>
+    <div class="comment-text">Carol. Both of them carried something home. Yes.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>189,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">1 hour 14 minutes ago</span></div>
+    <div class="comment-text">the walls of troy are gone. the ships are gone. the men are gone. the city is gone. the only thing that survived is a man talking around a fire because he couldn't stop. that's not a metaphor for something. that's just what happened. stories are the most durable thing humans have ever made.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>201,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- SGT_Harlow_Ret reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/SGT_Harlow_Ret.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SGT_Harlow_Ret</span><span class="timestamp">1 hour 6 minutes ago</span></div>
+    <div class="comment-text">you come home and you talk about it because you have to. not because you want anyone to know. because it has to go somewhere outside you. that soldier understood that. every soldier understands that.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">58 minutes ago</span></div>
+    <div class="comment-text">yeah</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- VeteranTeacher_MrKowalski — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/VeteranTeacher_MrKowalski.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">VeteranTeacher_MrKowalski</span><span class="timestamp">1 hour 28 minutes ago</span></div>
+    <div class="comment-text">I showed my students the opening card today. Just that. We followed it back. I asked them what they thought it meant.<br><br>The boy raised his hand. He said it means he doesn't always know where to look. He said it means he had to find it the same way we have to find things. Just with better tools.<br><br>I asked him what tools he thought the channel had. He thought about it for a long time. He said: the ability to go check.<br><br>Twenty two years. I am writing that down.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,300</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- TemporalMechanics_PhD reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">1 hour 14 minutes ago</span></div>
+    <div class="comment-text">the ability to go check. that boy just described the most powerful research tool in the history of human knowledge in six words.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 8 minutes ago</span></div>
+    <div class="comment-text">That boy.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- MargaretFrom_Aberdeen reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MargaretFrom_Aberdeen.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MargaretFrom_Aberdeen</span><span class="timestamp">58 minutes ago</span></div>
+    <div class="comment-text">Please tell him that an old woman in Scotland thinks he is going to be remarkable. Again.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>98,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- new_here_found_it_today — top level -->
+<div class="comment">
+  <div class="avatar">N</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">new_here_found_it_today</span><span class="timestamp">1 hour 19 minutes ago</span></div>
+    <div class="comment-text">I just found this channel an hour ago. I watched all the videos in order like someone in an older comment section told me to. The mammoth. The flower. The city on the lake. And now this.<br><br>Can someone explain what we followed it back means. I think I understand but I want to make sure I'm understanding it right.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>44,800</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">1 hour 8 minutes ago</span></div>
+    <div class="comment-text">it means he had to investigate. he found a fragment and didn't know where it came from. so he went back through time following the chain — who copied it, who they copied it from, who sang it to them, who taught that singer — all the way back to the source. he can go verify every link because he can go there. but he still had to find the links first.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- new_here_found_it_today reply -->
+<div class="comment reply">
+  <div class="avatar small">N</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">new_here_found_it_today</span><span class="timestamp">58 minutes ago</span></div>
+    <div class="comment-text">so he's not omniscient. he has to do the work.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>28,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">51 minutes ago</span></div>
+    <div class="comment-text">he has to do the work. yes. and this is the first time he showed us that. which means every video before this one also required the work. we just didn't know we were watching the result of an investigation. we thought we were watching arrival. we were watching arrival but we weren't seeing the journey that got him there.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>156,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- TemporalMechanics_PhD reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">44 minutes ago</span></div>
+    <div class="comment-text">that changes how I think about all of them. antietam. the flower. tenochtitlan. he found those too. he didn't just know.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- PhilosophyBro_Actually — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/PhilosophyBro_Actually.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PhilosophyBro_Actually</span><span class="timestamp">47 minutes ago</span></div>
+    <div class="comment-text">I've been sitting with this for three days.<br><br>The poem survived because it lived in human mouths for five hundred years before anyone wrote it down. Not in stone. Not in clay. Not in papyrus. In people. In the specific neural architecture of singers who had trained themselves to carry fifteen thousand lines of verse in their heads and pass it intact to the next singer.<br><br>The most durable storage medium in human history is a person who cares enough to remember.<br><br>And then I think about what this channel is. A mind that goes back and finds things and carries them forward and shows them to us. The Historical Record is doing what the singers did. Going to the thing. Carrying it. Making sure it gets passed on.<br><br>The chain didn't start with the soldier on the beach. It started with whoever was at Troy and survived to talk about it. And it didn't end with the British Museum fragment. It ended this morning when eleven million people watched a man sit outside in the evening and speak quietly to his student.<br><br>The chain is still going. We're in it now. We're the next link.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>267,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">34 minutes ago</span></div>
+    <div class="comment-text">We're the next link. I need to sit with that.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>178,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- CarolHineyMarsh reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CarolHineyMarsh.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CarolHineyMarsh</span><span class="timestamp">28 minutes ago</span></div>
+    <div class="comment-text">Elias made it home and now his family carries him. The soldier on the beach talked around a fire and now we carry him. That's what it means to be the next link.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>145,600</div>
+    </div>
+  </div>
+</div>
+
+<!-- OldRomeNewTricks — closing top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/OldRomeNewTricks.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">OldRomeNewTricks</span><span class="timestamp">33 minutes ago</span></div>
+    <div class="comment-text">the first flower bloomed 130 million years ago and nobody was there to see it. except him.<br><br>the last mammoth called into silence 3,600 years ago. except him.<br><br>the soldier talked around a fire 3,200 years ago and the words found their way to a lab in london 3,000 years later.<br><br>everything is a chain.<br>everything is one thing passing itself to the next thing in the dark hoping someone is there to receive it.<br>the flower passed itself to the beetle.<br>the soldier passed it to the men around the fire.<br>the singers passed it to the scribes.<br>the scribes passed it to us.<br>he passed all of it to us.<br><br>we're not the audience.<br>we never were.<br>we're the next singer.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">21 minutes ago</span></div>
+    <div class="comment-text">we're the next singer. that's it. that's the whole channel. that's always been the whole channel.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>189,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">16 minutes ago</span></div>
+    <div class="comment-text">yeah</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- TheHistoricalRecord — final -->
+<div class="comment reply">
+  <div class="avatar small" style="background:#e0e0e0;"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username thr">TheHistoricalRecord</span><span class="timestamp">just now</span></div>
+    <div class="comment-text">The soldier's name was Demetrios. He talked for the rest of his life. He died at eighty one. His grandson was the first to sing it as a song.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>8,247,300</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
