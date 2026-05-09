@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: auto; overflow: visible; }
+  body { background: #ffffff; color: #0f0f0f; font-family: Roboto, Arial, sans-serif; padding: 24px; }
+  .comments-header { margin-bottom: 28px; }
+  .comments-count { font-size: 22px; font-weight: 500; }
+  .comment { display: flex; gap: 16px; margin-bottom: 28px; }
+  .comment.reply { margin-left: 56px; margin-bottom: 16px; }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 500; flex-shrink: 0; text-transform: uppercase; color: #555; }
+  .avatar.small { width: 30px; height: 30px; font-size: 13px; }
+  .comment-body { flex: 1; }
+  .comment-meta { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+  .username { font-size: 18px; font-weight: 600; color: #0f0f0f; }
+  .timestamp { font-size: 16px; color: #666; }
+  .comment-text { font-size: 19px; color: #111; line-height: 1.7; margin-bottom: 10px; }
+  .comment-actions { display: flex; align-items: center; gap: 16px; }
+  .action { display: flex; align-items: center; gap: 4px; font-size: 16px; color: #555; cursor: pointer; }
+  .action svg { width: 18px; height: 18px; fill: #555; }
+</style>
+</head>
+<body>
+
+<div class="comments-header">
+  <div class="comments-count">Comments</div>
+</div>
+
+<!-- stalechipdefender — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">just posted</span></div>
+    <div class="comment-text">called it. three days ago. none survived. none survived.<br><br>I can't read ancient Greek. I'm going to sit here and watch people who can tell us what we're looking at.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>334,200</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- AncientGreek_Dr_Papadimitriou — top level -->
+<div class="comment">
+  <div class="avatar">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AncientGreek_Dr_Papadimitriou</span><span class="timestamp">3 minutes ago</span></div>
+    <div class="comment-text">I am watching this in real time. I need everyone to be quiet for a moment while I read.<br><br>The first page. The handwriting is late antique Alexandria in style — 4th to early 5th century. The ink is iron gall. The text opens with a statement of geometric proposition in the Euclidean tradition but the formulation is not Euclid. It is not Apollonius either. It is someone working in that tradition but extending it in a direction I have not encountered before.<br><br>I need to keep watching. I will report back.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- AncientGreek_Dr_Papadimitriou reply 1 -->
+<div class="comment reply">
+  <div class="avatar small">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AncientGreek_Dr_Papadimitriou</span><span class="timestamp">11 minutes ago</span></div>
+    <div class="comment-text">Page three. The diagram in the upper left. A conic section being intersected by a plane at an angle not treated in Apollonius's Conics. Whoever wrote this is working in the gap. In the space Apollonius pointed toward but did not enter.<br><br>I need to keep watching.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- AncientGreek_Dr_Papadimitriou reply 2 -->
+<div class="comment reply">
+  <div class="avatar small">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AncientGreek_Dr_Papadimitriou</span><span class="timestamp">19 minutes ago</span></div>
+    <div class="comment-text">Page seven. New document. Different question entirely. Astronomical. The precession of the equinoxes calculated using a method I have not seen before. The arithmetic is unlike anything in the existing record for this period.<br><br>I need a mathematician. Someone get me a mathematician.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- ClassicalMath_Prof_Andersen — top level -->
+<div class="comment">
+  <div class="avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ClassicalMath_Prof_Andersen</span><span class="timestamp">8 minutes ago</span></div>
+    <div class="comment-text">Mathematician here. Watching from the beginning. The diagram on page two. I have paused and I have been looking at it for six minutes. What this manuscript is doing with the relationship between the curve and the asymptote is — we thought this was first worked out in the 17th century. I need to be precise: what I am looking at appears to predate the result we attribute to John Wallis by twelve hundred years.<br><br>I do not yet know whose work this is. I am going to watch the rest now. I will be back.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,300</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- ClassicalMath_Prof_Andersen reply 1 -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ClassicalMath_Prof_Andersen</span><span class="timestamp">24 minutes ago</span></div>
+    <div class="comment-text">Page nine. I had to stop. I have been sitting here for five minutes unable to continue.<br><br>What this manuscript contains on this page is not an extension of existing work. It is a new method. A method for calculating the area under a curve that is — I don't know how to say this without sounding like I have lost my mind — functionally equivalent to what Newton and Leibniz independently developed in the 1660s and 1670s.<br><br>This was written in approximately 400 AD.<br><br>I need to keep watching. I cannot keep watching. I am going to keep watching.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>189,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- HistoryOfMath_Dr_Okonkwo reply -->
+<div class="comment reply">
+  <div class="avatar small">H</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HistoryOfMath_Dr_Okonkwo</span><span class="timestamp">27 minutes ago</span></div>
+    <div class="comment-text">Prof. Andersen. I am watching alongside you. I see the same thing on page nine. I want to be careful here. I want to be very careful. But I think you are right. And I still don't know whose work this is.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- ClassicalMath_Prof_Andersen reply 2 -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ClassicalMath_Prof_Andersen</span><span class="timestamp">31 minutes ago</span></div>
+    <div class="comment-text">Page twelve. There is more. Whoever wrote this knew the implications of what they were doing on page nine. They are following them. Building on their own result. This person had a functional calculus in 400 AD. And then — based on the date alone — something happened to it. Because we don't have it. We have never had it. Until now.<br><br>I need to stop typing and keep reading.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>156,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- Papyrology_Lab_Oxford — top level -->
+<div class="comment">
+  <div class="avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">Papyrology_Lab_Oxford</span><span class="timestamp">18 minutes ago</span></div>
+    <div class="comment-text">We have been frame by frame analyzing the physical document visible in the footage since the video was posted. The papyrus fiber structure is consistent with Egyptian papyrus of the 4th to early 5th century AD. The ink degradation pattern is consistent with iron gall ink of the same period. The scribal hand is consistent with Alexandrian scholarly production of the late Roman period.<br><br>We cannot authenticate a document from footage alone. We want to be clear about that. What we can say is that nothing visible in this footage is inconsistent with authenticity. Nothing. In thirty five minutes of high resolution footage of nineteen pages of manuscript there is not a single anachronism we can identify.<br><br>We do not yet know whose work this is. We are continuing our analysis.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,900</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- HypatiaScholar_Dr_Vasiliou — top level -->
+<div class="comment">
+  <div class="avatar">H</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HypatiaScholar_Dr_Vasiliou</span><span class="timestamp">34 minutes ago</span></div>
+    <div class="comment-text">I recognize the handwriting.<br><br>I am going to say that again. I recognize the handwriting.<br><br>I cannot explain how I recognize it. I cannot explain why I am certain. I am certain.<br><br>This is Hypatia of Alexandria.<br><br>Three days ago this channel posted a video of her teaching. Her life. Her death. And in the title card it said: her works were destroyed with her. None survive. None survived.<br><br>He went back before the burning. He went back before March 415 AD and he pointed a camera at her work while it still existed and he let it run for thirty five minutes.<br><br>This is her hand. This is her mathematics. All of it.<br><br>I will have more to say when I have collected myself. For now I need to keep watching.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>312,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- AncientGreek_Dr_Papadimitriou reply -->
+<div class="comment reply">
+  <div class="avatar small">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AncientGreek_Dr_Papadimitriou</span><span class="timestamp">37 minutes ago</span></div>
+    <div class="comment-text">Dr. Vasiliou. Your authentication changes everything about what we are watching. Please keep watching and report back everything.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>189,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- ClassicalMath_Prof_Andersen reply -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ClassicalMath_Prof_Andersen</span><span class="timestamp">39 minutes ago</span></div>
+    <div class="comment-text">Hypatia of Alexandria. Page nine makes sense now. Page twelve makes sense now. She was so far ahead of her time that we credited her results to men who came twelve hundred years after her because we didn't know she had them first.<br><br>She had a calculus. In 400 AD. And then she was killed and it burned with her and Newton and Leibniz had to find it again.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>201,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- HypatiaScholar_Dr_Vasiliou reply -->
+<div class="comment reply">
+  <div class="avatar small">H</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HypatiaScholar_Dr_Vasiliou</span><span class="timestamp">44 minutes ago</span></div>
+    <div class="comment-text">The fourth document. Pages sixteen through nineteen. The astronomical work. She is not just calculating. She is explaining her method. Step by step. The way she explained things to her students. The way she taught.<br><br>She trusted whoever was reading this to keep up. She always did.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>245,600</div>
+    </div>
+  </div>
+</div>
+
+<!-- HistoryOfMath_Dr_Okonkwo — top level -->
+<div class="comment">
+  <div class="avatar">H</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HistoryOfMath_Dr_Okonkwo</span><span class="timestamp">51 minutes ago</span></div>
+    <div class="comment-text">I have watched the full thirty five minutes. I have been sitting here for twenty minutes since it ended trying to compose what I want to say.<br><br>What is on those pages is not commentary. It is not teaching material. It is not a compilation of existing work. It is original mathematics of the highest order produced by a mind working at the absolute frontier of what was possible in her time and beyond it.<br><br>She had a calculus. She had a method for astronomical calculation that we did not develop again for centuries. She had geometric results that we credited to mathematicians who came a millennium after her.<br><br>She had all of it. And it burned. And now it doesn't.<br><br>I don't know what the appropriate academic response to this is. I don't think there is a protocol for this. I think we are going to have to invent one.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,300</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- ClassicalMath_Prof_Andersen reply -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ClassicalMath_Prof_Andersen</span><span class="timestamp">54 minutes ago</span></div>
+    <div class="comment-text">Agreed on all points. I have been on the phone with three colleagues in the last hour. None of us know what the appropriate response is. All of us agree on what we saw.<br><br>She was further ahead than we knew. By how much we are still working out.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>156,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- HypatiaScholar_Dr_Vasiliou reply -->
+<div class="comment reply">
+  <div class="avatar small">H</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HypatiaScholar_Dr_Vasiliou</span><span class="timestamp">58 minutes ago</span></div>
+    <div class="comment-text">Thirty one years. I have spent thirty one years trying to reconstruct what she knew from the fragments and references that survived. Commentary on Apollonius. Commentary on Diophantus. The astrolabe. The hydrometer. The edges of what she left behind.<br><br>I did not know about this. None of us knew about this. None of us could have known.<br><br>She was so far ahead.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>289,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender — closing top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">1 hour 12 minutes ago</span></div>
+    <div class="comment-text">I still can't read ancient Greek.<br><br>but I've been sitting here for thirty five minutes watching mathematicians and classicists arrive in this comment section one by one and realize what they're looking at. watching them go quiet. watching them come back. watching them try to find the words for something that doesn't have words yet.<br><br>none survived. none survived.<br><br>one of those is past tense. one of those isn't anymore.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>489,200</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">1 hour 1 minute ago</span></div>
+    <div class="comment-text">yeah</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>312,400</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
