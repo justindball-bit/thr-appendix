@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: auto; overflow: visible; }
+  body { background: #ffffff; color: #0f0f0f; font-family: Roboto, Arial, sans-serif; padding: 24px; }
+  .comments-header { margin-bottom: 28px; }
+  .comments-count { font-size: 22px; font-weight: 500; }
+  .comment { display: flex; gap: 16px; margin-bottom: 28px; }
+  .comment.reply { margin-left: 56px; margin-bottom: 16px; }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 500; flex-shrink: 0; text-transform: uppercase; color: #555; }
+  .avatar.small { width: 30px; height: 30px; font-size: 13px; }
+  .comment-body { flex: 1; }
+  .comment-meta { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+  .username { font-size: 18px; font-weight: 600; color: #0f0f0f; }
+  .timestamp { font-size: 16px; color: #666; }
+  .comment-text { font-size: 19px; color: #111; line-height: 1.7; margin-bottom: 10px; }
+  .comment-actions { display: flex; align-items: center; gap: 16px; }
+  .action { display: flex; align-items: center; gap: 4px; font-size: 16px; color: #555; cursor: pointer; }
+  .action svg { width: 18px; height: 18px; fill: #555; }
+</style>
+</head>
+<body>
+
+<div class="comments-header">
+  <div class="comments-count">Comments</div>
+</div>
+
+<!-- MiddleweightMauler_Official — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MiddleweightMauler_Official.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MiddleweightMauler_Official</span><span class="timestamp">2 hours ago</span></div>
+    <div class="comment-text">okay I need everyone to understand what Alexander did here from a pure combat strategy standpoint because I don't think the history books adequately convey the audacity of it.<br><br>Outnumbered on a narrow plain against the greatest empire on earth. So he personally leads his heavy cavalry on the right flank, crosses a river under fire, punches through the Persian left, wheels left, and rides directly at the king himself.<br><br>He didn't try to win the battle. He tried to end it by removing the person at the center of it. In twenty three years of life he figured out that armies fight for their king and if you take the king the army stops.<br><br>That is the most tactically sophisticated and personally insane thing I have ever seen. I have fought in cages for twenty years. I have never done anything close to that brave or that smart simultaneously.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>445,200</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- SGT_Harlow_Ret reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/SGT_Harlow_Ret.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SGT_Harlow_Ret</span><span class="timestamp">1 hour 48 minutes ago</span></div>
+    <div class="comment-text">What you're describing is called decapitation strategy. Taking out command and control to collapse the enemy's will to fight. We still use it. Twenty three hundred years later. He figured it out on a coastal plain in Turkey with a horse and a spear.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>312,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- MiddleweightMauler reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MiddleweightMauler_Official.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MiddleweightMauler_Official</span><span class="timestamp">1 hour 39 minutes ago</span></div>
+    <div class="comment-text">SGT_Harlow_Ret I want to shake this man's hand across two thousand years.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>267,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- SGT_Harlow_Ret reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/SGT_Harlow_Ret.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SGT_Harlow_Ret</span><span class="timestamp">1 hour 31 minutes ago</span></div>
+    <div class="comment-text">Get in line.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>223,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- MiddleweightMauler reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MiddleweightMauler_Official.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MiddleweightMauler_Official</span><span class="timestamp">1 hour 24 minutes ago</span></div>
+    <div class="comment-text">and another thing. he was twenty three. TWENTY THREE. I was eating cereal out of the box and watching reality television at twenty three. this man was personally leading cavalry charges at the king of persia.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>289,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">1 hour 16 minutes ago</span></div>
+    <div class="comment-text">to be fair you were also not king of macedonia at twenty three</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>234,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- MiddleweightMauler reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MiddleweightMauler_Official.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MiddleweightMauler_Official</span><span class="timestamp">1 hour 9 minutes ago</span></div>
+    <div class="comment-text">valid point. different circumstances. still.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>312,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- TacticsNerd_2024 — top level -->
+<div class="comment">
+  <div class="avatar">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TacticsNerd_2024</span><span class="timestamp">1 hour 57 minutes ago</span></div>
+    <div class="comment-text">okay can we talk about what Alexander's cavalry is doing at timestamp 4:23 because that is a textbook hammer and anvil with the phalanx as the anvil and the companions as the hammer and he is executing it PERFECTLY while also being in personal danger the entire time. this man invented modern combined arms tactics on a tuesday in 333 BC</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>189,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- MiddleweightMauler reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MiddleweightMauler_Official.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MiddleweightMauler_Official</span><span class="timestamp">1 hour 44 minutes ago</span></div>
+    <div class="comment-text">THANK YOU. nobody talks about the tactical sophistication. everyone talks about the courage. the courage is insane yes. but the BRAIN behind it. the man is running the most dangerous play in the playbook while personally being the ball.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>312,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- SGT_Harlow_Ret reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/SGT_Harlow_Ret.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SGT_Harlow_Ret</span><span class="timestamp">1 hour 38 minutes ago</span></div>
+    <div class="comment-text">He is simultaneously the commanding general, the decisive weapon, and the primary target. No modern doctrine would sanction it. It worked anyway.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>267,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- TacticsNerd reply -->
+<div class="comment reply">
+  <div class="avatar small">T</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TacticsNerd_2024</span><span class="timestamp">1 hour 29 minutes ago</span></div>
+    <div class="comment-text">SGT are you military<br><br>because that is the most military sentence I have ever read</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>145,600</div>
+    </div>
+  </div>
+</div>
+
+<!-- SGT_Harlow_Ret reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/SGT_Harlow_Ret.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SGT_Harlow_Ret</span><span class="timestamp">1 hour 22 minutes ago</span></div>
+    <div class="comment-text">Two tours Fallujah. Different era. Same chaos.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>189,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- HistoryNerdEmma — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/HistoryNerdEmma.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HistoryNerdEmma</span><span class="timestamp">1 hour 51 minutes ago</span></div>
+    <div class="comment-text">timestamp 2:17. the soldier on the left of the Persian line. look at his face. he can see what's coming and his unit hasn't moved yet. he's just standing there watching Alexander's cavalry cross the river and you can see him doing the math and not liking the answer.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 38 minutes ago</span></div>
+    <div class="comment-text">That face. Yes. That's the whole video in one face.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>223,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- RandomGuyFromTulsa reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/RandomGuyFromTulsa.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">RandomGuyFromTulsa</span><span class="timestamp">1 hour 29 minutes ago</span></div>
+    <div class="comment-text">I showed my daughter that timestamp. She's twelve. She said dad that man knows exactly what's about to happen and he's going to stand there anyway. I said yes. She said that's the bravest thing I've ever seen. Not Alexander. That guy.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- MargaretFrom_Aberdeen reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MargaretFrom_Aberdeen.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MargaretFrom_Aberdeen</span><span class="timestamp">1 hour 18 minutes ago</span></div>
+    <div class="comment-text">Not Alexander. That guy. Your daughter keeps finding the right person to look at.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>156,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- KyleFromOhio_Actually — top level -->
+<div class="comment">
+  <div class="avatar">K</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">KyleFromOhio_Actually</span><span class="timestamp">1 hour 48 minutes ago</span></div>
+    <div class="comment-text">BRO. BRO. I was NOT prepared for this. I clicked on this channel because my history teacher told me to and I have been sitting here for twenty minutes with my mouth open. WHAT IS HAPPENING ON SCREEN RIGHT NOW</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>234,500</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">1 hour 36 minutes ago</span></div>
+    <div class="comment-text">welcome. watch all the others. in order.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- KyleFromOhio reply -->
+<div class="comment reply">
+  <div class="avatar small">K</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">KyleFromOhio_Actually</span><span class="timestamp">1 hour 24 minutes ago</span></div>
+    <div class="comment-text">I watched the mammoth one first like you said and I need to lie down</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- ClassicalHistory_throwaway — top level -->
+<div class="comment">
+  <div class="avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ClassicalHistory_throwaway</span><span class="timestamp">1 hour 44 minutes ago</span></div>
+    <div class="comment-text">genuine question from someone who knows nothing: how many people are we watching die right now. like I understand this is history and it happened but I am watching it happen and I don't know what to do with that</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- AncientWarfare_Dr_Croft reply -->
+<div class="comment reply">
+  <div class="avatar small">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AncientWarfare_Dr_Croft</span><span class="timestamp">1 hour 31 minutes ago</span></div>
+    <div class="comment-text">Ancient sources vary wildly. Conservative estimates suggest Persian casualties in the tens of thousands. Macedonian casualties were relatively light — perhaps five hundred dead. The asymmetry reflects how complete the rout was once Darius fled.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- ClassicalHistory_throwaway reply -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ClassicalHistory_throwaway</span><span class="timestamp">1 hour 24 minutes ago</span></div>
+    <div class="comment-text">tens of thousands</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- AncientWarfare_Dr_Croft reply -->
+<div class="comment reply">
+  <div class="avatar small">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AncientWarfare_Dr_Croft</span><span class="timestamp">1 hour 18 minutes ago</span></div>
+    <div class="comment-text">Yes. In approximately three hours. On a plain four kilometers wide.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- ClassicalHistory_throwaway reply -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ClassicalHistory_throwaway</span><span class="timestamp">1 hour 11 minutes ago</span></div>
+    <div class="comment-text">I need to go outside</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- BeardedHistoryGuy — top level -->
+<div class="comment">
+  <div class="avatar">B</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">BeardedHistoryGuy</span><span class="timestamp">1 hour 39 minutes ago</span></div>
+    <div class="comment-text">timestamp 6:48. the Macedonian phalanx advancing. those sarissas — the long spears — are sixteen feet long. SIXTEEN FEET. that formation is essentially a moving wall of steel points and the Persian infantry has to walk into it. I have read about this a hundred times. seeing it is completely different from reading about it.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>267,800</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- MiddleweightMauler reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MiddleweightMauler_Official.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MiddleweightMauler_Official</span><span class="timestamp">1 hour 27 minutes ago</span></div>
+    <div class="comment-text">sixteen feet. that's like fighting someone whose arms are three times longer than yours. there is no answer to that. you just have to find the gap and pray.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>312,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- BeardedHistoryGuy reply -->
+<div class="comment reply">
+  <div class="avatar small">B</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">BeardedHistoryGuy</span><span class="timestamp">1 hour 19 minutes ago</span></div>
+    <div class="comment-text">and Alexander found the gap. because of course he did.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>145,600</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 33 minutes ago</span></div>
+    <div class="comment-text">He stayed with Darius.<br><br>Every other battle this channel has shown us he found the human thing inside it. This time the human thing is a man on a chariot watching something he cannot stop and understanding that before it arrives.<br><br>He didn't show us the victory. He showed us the moment a man understood he had lost an empire. Those are different videos. He made the harder one.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>267,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CarolHineyMarsh reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CarolHineyMarsh.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CarolHineyMarsh</span><span class="timestamp">1 hour 21 minutes ago</span></div>
+    <div class="comment-text">Elias inside Antietam. Itzli inside Tenochtitlan. Demetrios inside Troy. Darius inside Issus. He always finds the one the history books moved past too quickly.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>189,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">1 hour 12 minutes ago</span></div>
+    <div class="comment-text">alexander is in the distance the whole video. small. coming. darius is who we're with. that's not an accident. that's an argument about whose story this actually is.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>234,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- PersianHistory_Dr_Shirazi reply -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PersianHistory_Dr_Shirazi</span><span class="timestamp">1 hour 4 minutes ago</span></div>
+    <div class="comment-text">He was not a coward. I want to say that clearly. He was a fifty one year old king who looked across a battlefield and made the only rational decision available to him. History written by the victors called it cowardice. It wasn't. It was the correct read of an impossible situation.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>145,600</div>
+    </div>
+  </div>
+</div>
+
+<!-- SGT_Harlow_Ret reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/SGT_Harlow_Ret.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SGT_Harlow_Ret</span><span class="timestamp">56 minutes ago</span></div>
+    <div class="comment-text">Every commander has a moment where the battlefield tells them something they don't want to hear. The good ones listen. Darius listened. He just happened to be listening to Alexander.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>178,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- NotAHistorian_JustAFan — top level -->
+<div class="comment">
+  <div class="avatar">N</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">NotAHistorian_JustAFan</span><span class="timestamp">1 hour 27 minutes ago</span></div>
+    <div class="comment-text">I'm sorry but can we acknowledge that Alexander the Great looks absolutely unhinged in the best possible way. this man is riding DIRECTLY at the largest army on earth with what appears to be zero concern for his own continued existence and there is something deeply wrong with him and also I completely understand why people followed him into battle</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>445,200</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- MiddleweightMauler reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MiddleweightMauler_Official.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MiddleweightMauler_Official</span><span class="timestamp">1 hour 14 minutes ago</span></div>
+    <div class="comment-text">as a professional fighter I can confirm that the most dangerous person in any confrontation is the one who has genuinely stopped caring what happens to them. Alexander clearly stopped caring somewhere around age nineteen and just never started again.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>389,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- NotAHistorian reply -->
+<div class="comment reply">
+  <div class="avatar small">N</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">NotAHistorian_JustAFan</span><span class="timestamp">1 hour 8 minutes ago</span></div>
+    <div class="comment-text">this is the most insightful thing anyone has said about Alexander the Great and it came from a comment section</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>267,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- AlexanderScholar_Prof_Lane reply -->
+<div class="comment reply">
+  <div class="avatar small">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AlexanderScholar_Prof_Lane</span><span class="timestamp">58 minutes ago</span></div>
+    <div class="comment-text">I have a doctorate in Alexandrian studies and I cannot improve on this analysis.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>189,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- VeteranTeacher_MrKowalski — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/VeteranTeacher_MrKowalski.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">VeteranTeacher_MrKowalski</span><span class="timestamp">1 hour 19 minutes ago</span></div>
+    <div class="comment-text">I showed my students the moment the Macedonian line hits the river. The boy raised his hand. He said: they don't slow down at the water. Everyone else would slow down at the water. They don't slow down.<br><br>I asked him why. He said: because Alexander was already on the other side in his mind. The river wasn't an obstacle. It was just the next thing.<br><br>Twenty two years. I am writing that down.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,300</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 7 minutes ago</span></div>
+    <div class="comment-text">That boy.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>145,600</div>
+    </div>
+  </div>
+</div>
+
+<!-- MiddleweightMauler reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MiddleweightMauler_Official.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MiddleweightMauler_Official</span><span class="timestamp">59 minutes ago</span></div>
+    <div class="comment-text">that kid needs to coach something. anything. I'm serious.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>189,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- AncientCoinage_Dr_Mehta — top level -->
+<div class="comment">
+  <div class="avatar">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AncientCoinage_Dr_Mehta</span><span class="timestamp">1 hour 11 minutes ago</span></div>
+    <div class="comment-text">The brooch on Darius's cloak. Upper right, visible for approximately eight seconds during the chariot sequence. That is an Achaemenid royal brooch of a specific type that we have only seen in two surviving examples — one in the Metropolitan Museum, one in Tehran. The position of the pin mechanism is consistent with Persian metalworking of the late 4th century BC. I have been studying Achaemenid jewelry for nineteen years and I did not know that brooch style was worn during active military campaigns. I assumed it was ceremonial only.<br><br>Apparently not.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- AncientWarfare_Dr_Croft reply -->
+<div class="comment reply">
+  <div class="avatar small">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">AncientWarfare_Dr_Croft</span><span class="timestamp">58 minutes ago</span></div>
+    <div class="comment-text">nineteen years and a brooch changed your understanding. that's this channel in one comment.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- GrumpyFilmEditor — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/GrumpyFilmEditor.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">GrumpyFilmEditor</span><span class="timestamp">1 hour 11 minutes ago</span></div>
+    <div class="comment-text">The aerial establishing shot. High enough to show both armies and the river between them. Low enough to read individual units. Stable in a way that no camera system produces. There is no angle that gives you that view of that terrain without either being so high you lose the detail or so low you lose the scale.<br><br>He found the angle that doesn't exist and used it anyway.<br><br>Thirty years in post production. Ten out of ten. No notes. I need to go lie down.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- DebunkDaily reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/DebunkDaily.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">DebunkDaily</span><span class="timestamp">58 minutes ago</span></div>
+    <div class="comment-text">he always finds the angle that doesn't exist. antietam. the flower. the mammoth. always.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- OldRomeNewTricks — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/OldRomeNewTricks.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">OldRomeNewTricks</span><span class="timestamp">58 minutes ago</span></div>
+    <div class="comment-text">the channel started with two soldiers in a cornfield.<br><br>now it shows us two of the greatest armies in the ancient world on a coastal plain in Turkey with the mountains behind them and the sea to the right and everything about to change.<br><br>the scale keeps growing.<br>the human thing inside it never does.<br>darius on his chariot.<br>elias in the dirt.<br>the same size.<br>always the same size.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">46 minutes ago</span></div>
+    <div class="comment-text">always the same size. yes.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>189,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- HypatiaScholar_Dr_Vasiliou — top level -->
+<div class="comment">
+  <div class="avatar">H</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">HypatiaScholar_Dr_Vasiliou</span><span class="timestamp">47 minutes ago</span></div>
+    <div class="comment-text">20261223 18:31</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>3</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender — closing top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">38 minutes ago</span></div>
+    <div class="comment-text">two armies on a plain in november.<br>two hundred thousand on one side.<br>forty thousand on the other.<br>a river between them.<br>a twenty three year old who decided the river didn't matter.<br>a fifty one year old who looked across the whole width of the ancient world and saw him coming.<br><br>three hours.<br>the world was never the same.<br><br>darius on his chariot was the whole video.<br>alexander was the distance.<br>the direction.<br>the thing that was coming.<br><br>that's all he needed to be.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>489,300</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">26 minutes ago</span></div>
+    <div class="comment-text">That's it exactly.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>223,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- SGT_Harlow_Ret reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/SGT_Harlow_Ret.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SGT_Harlow_Ret</span><span class="timestamp">19 minutes ago</span></div>
+    <div class="comment-text">The man who lost. The channel stayed with the man who lost. That's not nothing. That's everything.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>189,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">4 minutes ago</span></div>
+    <div class="comment-text">yeah</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
