@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: auto; overflow: visible; }
+  body { background: #ffffff; color: #0f0f0f; font-family: Roboto, Arial, sans-serif; padding: 24px; }
+  .comments-header { margin-bottom: 28px; }
+  .comments-count { font-size: 22px; font-weight: 500; }
+  .comment { display: flex; gap: 16px; margin-bottom: 28px; }
+  .comment.reply { margin-left: 56px; margin-bottom: 16px; }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 500; flex-shrink: 0; text-transform: uppercase; color: #555; }
+  .avatar.small { width: 30px; height: 30px; font-size: 13px; }
+  .comment-body { flex: 1; }
+  .comment-meta { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+  .username { font-size: 18px; font-weight: 600; color: #0f0f0f; }
+  .username.thr { color: #065fd4; }
+  .username.streetlevel { color: #cc0000; }
+  .timestamp { font-size: 16px; color: #666; }
+  .comment-text { font-size: 19px; color: #111; line-height: 1.7; margin-bottom: 10px; }
+  .comment-actions { display: flex; align-items: center; gap: 16px; }
+  .action { display: flex; align-items: center; gap: 4px; font-size: 16px; color: #555; cursor: pointer; }
+  .action svg { width: 18px; height: 18px; fill: #555; }
+  .section-break { border-top: 3px solid #065fd4; margin: 40px 0 32px 0; padding-top: 16px; }
+  .section-label { font-size: 16px; color: #065fd4; font-weight: 600; margin-bottom: 24px; }
+</style>
+</head>
+<body>
+
+<div class="comments-header">
+  <div class="comments-count">Comments</div>
+</div>
+
+<!-- PavementPodcast — top level -->
+<div class="comment">
+  <div class="avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PavementPodcast</span><span class="timestamp">2 minutes ago</span></div>
+    <div class="comment-text">I'm sorry. I'm sorry. The title says 103 AD. I clicked play. This is ancient Rome. This is an actual walk through ancient Rome. Street Level what have you done.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>3,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- WalkingWithClara reply -->
+<div class="comment reply">
+  <div class="avatar small">W</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">WalkingWithClara</span><span class="timestamp">1 minute ago</span></div>
+    <div class="comment-text">I just clicked play and I had to pause it immediately because I needed a second. That is Rome. That is actually Rome. In 103 AD.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>2,100</div>
+    </div>
+  </div>
+</div>
+
+<!-- UrbanWalker_Felix reply -->
+<div class="comment reply">
+  <div class="avatar small">U</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">UrbanWalker_Felix</span><span class="timestamp">1 minute ago</span></div>
+    <div class="comment-text">read the description. Street Level planned it. The Historical Record walked it. I don't know how. Nobody knows how. Just watch it.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>1,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- PavementPodcast reply -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PavementPodcast</span><span class="timestamp">just now</span></div>
+    <div class="comment-text">I'm watching it. I can't stop watching it. I haven't blinked in four minutes.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>4,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- OnFootEurope — top level -->
+<div class="comment">
+  <div class="avatar">O</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">OnFootEurope</span><span class="timestamp">4 minutes ago</span></div>
+    <div class="comment-text">Street Level has 47 thousand subscribers. I have 98 thousand subscribers. I have been making walking videos for five years. I have walked Rome four times.<br><br>The Historical Record contacted Street Level.<br><br>I'm not bitter. I'm completely bitter. I'm also watching this on a loop and it's the greatest thing I've ever seen and I would have given anything for this to be me and also Street Level absolutely deserved this and I hate everything.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>6,700</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CityRhythms_Channel reply -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CityRhythms_Channel</span><span class="timestamp">3 minutes ago</span></div>
+    <div class="comment-text">I have 340 thousand subscribers and I am having the exact same experience reading this comment as you are having writing it.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>8,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- OnFootEurope reply -->
+<div class="comment reply">
+  <div class="avatar small">O</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">OnFootEurope</span><span class="timestamp">2 minutes ago</span></div>
+    <div class="comment-text">the courtyard off the Kramgasse. apparently that's what did it. forty seconds on a courtyard in Bern.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>11,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- CityRhythms_Channel reply -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CityRhythms_Channel</span><span class="timestamp">1 minute ago</span></div>
+    <div class="comment-text">I'm going back through every video I've ever made looking for my forty second courtyard moment.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>9,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- WalkWithMarta reply -->
+<div class="comment reply">
+  <div class="avatar small">W</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">WalkWithMarta</span><span class="timestamp">just now</span></div>
+    <div class="comment-text">same. going through everything. finding my courtyard. sending the DM.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>7,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- JustHereForTheWalks — top level -->
+<div class="comment">
+  <div class="avatar">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">JustHereForTheWalks</span><span class="timestamp">6 minutes ago</span></div>
+    <div class="comment-text">how. HOW. Street Level how did you get The Historical Record to do this. how long has this been in the works. WHAT IS HAPPENING.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>4,100</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- streetlevel reply -->
+<div class="comment reply">
+  <div class="avatar small" style="background:#cc0000;color:#fff;">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username streetlevel">streetlevel</span><span class="timestamp">4 minutes ago</span></div>
+    <div class="comment-text">Just watch the video.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- JustHereForTheWalks reply -->
+<div class="comment reply">
+  <div class="avatar small">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">JustHereForTheWalks</span><span class="timestamp">3 minutes ago</span></div>
+    <div class="comment-text">okay I'm watching it and I need everyone to look at the market near the Forum because the noise of it — you can't hear anything but you can SEE the noise and I —</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>8,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- JustHereForTheWalks reply -->
+<div class="comment reply">
+  <div class="avatar small">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">JustHereForTheWalks</span><span class="timestamp">1 minute ago</span></div>
+    <div class="comment-text">sorry I got distracted by the video. the market. LOOK AT THE MARKET.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>6,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- UrbanWalker_Felix — top level -->
+<div class="comment">
+  <div class="avatar">U</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">UrbanWalker_Felix</span><span class="timestamp">8 minutes ago</span></div>
+    <div class="comment-text">Street Level you absolute legend. 47 thousand subscribers and you somehow landed the most significant collaboration in the history of YouTube. I don't know whether to congratulate you or be furious at you.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>5,600</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- PavementPodcast reply -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PavementPodcast</span><span class="timestamp">6 minutes ago</span></div>
+    <div class="comment-text">both. definitely both.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>7,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- OnFootEurope reply -->
+<div class="comment reply">
+  <div class="avatar small">O</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">OnFootEurope</span><span class="timestamp">4 minutes ago</span></div>
+    <div class="comment-text">both simultaneously for the rest of time.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>6,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- ColorOfRome — top level -->
+<div class="comment">
+  <div class="avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ColorOfRome</span><span class="timestamp">11 minutes ago</span></div>
+    <div class="comment-text">can we talk about the COLOR. we grow up seeing ancient Rome as white marble and grey stone and the reality is — reds and yellows and blues and greens everywhere. the buildings are PAINTED. the walls are painted. the whole city is painted. it looks nothing like what I had in my head and everything like a living city should look.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>34,500</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- ArchitectureNerd_Lena reply -->
+<div class="comment reply">
+  <div class="avatar small">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ArchitectureNerd_Lena</span><span class="timestamp">9 minutes ago</span></div>
+    <div class="comment-text">This is the thing that gets classicists every time. We know intellectually that Roman buildings were painted. We have the pigment evidence. We have the descriptions. And then you see it and the intellectual knowledge becomes something completely different.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>28,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- ModernRomeWalker reply -->
+<div class="comment reply">
+  <div class="avatar small">M</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ModernRomeWalker</span><span class="timestamp">7 minutes ago</span></div>
+    <div class="comment-text">I walk past the ruins every day and I try to imagine the color. I have never managed it properly. Now I don't have to imagine it.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>19,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- ColorOfRome reply -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ColorOfRome</span><span class="timestamp">5 minutes ago</span></div>
+    <div class="comment-text">the yellow building at around 8 minutes. that specific yellow. that's the yellow I'm going to see every time I close my eyes for the rest of my life.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>22,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- DiceGameGuy — top level -->
+<div class="comment">
+  <div class="avatar">D</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">DiceGameGuy</span><span class="timestamp">14 minutes ago</span></div>
+    <div class="comment-text">timestamp 17:23. two men playing dice in the shadow of a column. completely ignoring everything happening around them. the Forum is RIGHT THERE. the most important civic space in the most powerful empire on earth and these two guys are just. playing dice. in the shade.<br><br>I have never related to anything more in my entire life.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,800</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- WalkingWithClara reply -->
+<div class="comment reply">
+  <div class="avatar small">W</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">WalkingWithClara</span><span class="timestamp">12 minutes ago</span></div>
+    <div class="comment-text">those are my people. those have always been my people. two thousand years and some men will always find a column to sit behind and play dice while history happens nearby.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,600</div>
+    </div>
+  </div>
+</div>
+
+<!-- UrbanWalker_Felix reply -->
+<div class="comment reply">
+  <div class="avatar small">U</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">UrbanWalker_Felix</span><span class="timestamp">10 minutes ago</span></div>
+    <div class="comment-text">history is happening forty feet away and they genuinely could not care less. aspirational honestly.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>38,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- OnFootEurope reply -->
+<div class="comment reply">
+  <div class="avatar small">O</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">OnFootEurope</span><span class="timestamp">8 minutes ago</span></div>
+    <div class="comment-text">I want to know everything about those two men. their names. what they were betting. who was winning. whether they ever looked up.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>41,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- ParentingAcrossTime — top level -->
+<div class="comment">
+  <div class="avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ParentingAcrossTime</span><span class="timestamp">18 minutes ago</span></div>
+    <div class="comment-text">timestamp 23:47. a woman dragging a child through the market. the child does not want to go wherever they are going. the child is making this very clear. the woman is not interested in the child's opinion on the matter.<br><br>my son is seven years old. I showed him this timestamp. he watched it and said mom that kid and me are the same. I said yes. he said that's kind of amazing. I said yes it is.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- JustHereForTheWalks reply -->
+<div class="comment reply">
+  <div class="avatar small">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">JustHereForTheWalks</span><span class="timestamp">15 minutes ago</span></div>
+    <div class="comment-text">two thousand years of children not wanting to go wherever their parents are taking them. the most consistent fact in human history.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- WalkWithMarta reply -->
+<div class="comment reply">
+  <div class="avatar small">W</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">WalkWithMarta</span><span class="timestamp">13 minutes ago</span></div>
+    <div class="comment-text">that child's face. the complete and total betrayal on that child's face. timeless. absolutely timeless.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>71,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- DiceGameGuy reply -->
+<div class="comment reply">
+  <div class="avatar small">D</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">DiceGameGuy</span><span class="timestamp">11 minutes ago</span></div>
+    <div class="comment-text">that child grew up. probably had their own children. probably dragged them through a market making the same face. the chain of reluctant children is unbroken across two thousand years.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>56,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- GraffitiSpotter — top level -->
+<div class="comment">
+  <div class="avatar">G</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">GraffitiSpotter</span><span class="timestamp">21 minutes ago</span></div>
+    <div class="comment-text">timestamp 34:12. the wall on the left. pause it. there is graffiti on that wall. I can make out enough of the Latin to tell you it is someone complaining about their upstairs neighbor making too much noise at night.<br><br>TWO THOUSAND YEARS AGO. someone carved a complaint about their noisy upstairs neighbor into a wall in Rome.<br><br>nothing has changed. absolutely nothing has changed.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,300</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- ModernRomeWalker reply -->
+<div class="comment reply">
+  <div class="avatar small">M</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ModernRomeWalker</span><span class="timestamp">18 minutes ago</span></div>
+    <div class="comment-text">we have actual surviving Roman graffiti that says things like "Successus the weaver loves the innkeeper's slave girl" and "I don't want to sell my husband" and "Restitutus has deceived many girls." two thousand years ago Romans were writing the same things people post on social media today.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- GraffitiSpotter reply -->
+<div class="comment reply">
+  <div class="avatar small">G</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">GraffitiSpotter</span><span class="timestamp">15 minutes ago</span></div>
+    <div class="comment-text">the noisy neighbor complaint is eternal. it was eternal in 103 AD and it will be eternal in 4027 AD. somewhere in the future someone is carving a complaint about their noisy neighbor into whatever surface is available.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- UrbanWalker_Felix reply -->
+<div class="comment reply">
+  <div class="avatar small">U</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">UrbanWalker_Felix</span><span class="timestamp">13 minutes ago</span></div>
+    <div class="comment-text">I live in an apartment building. my upstairs neighbor moves furniture at midnight. I feel seen across two thousand years.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>98,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- NeighborhoodWatch_103AD — top level -->
+<div class="comment">
+  <div class="avatar">N</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">NeighborhoodWatch_103AD</span><span class="timestamp">24 minutes ago</span></div>
+    <div class="comment-text">timestamp 41:33. two women arguing from their windows across the street from each other. I don't know what they're saying. I don't need to know what they're saying. I know exactly what they're saying. everyone knows exactly what they're saying. this argument has been happening in every city in every language for all of recorded human history and it is happening right here in Rome in 103 AD and it is EXACTLY the same.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>145,600</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- PavementPodcast reply -->
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PavementPodcast</span><span class="timestamp">21 minutes ago</span></div>
+    <div class="comment-text">the hand gestures. specifically the hand gestures. those are the same hand gestures. those are the EXACT same hand gestures.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- CityRhythms_Channel reply -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CityRhythms_Channel</span><span class="timestamp">19 minutes ago</span></div>
+    <div class="comment-text">body language is older than language. those gestures predate Latin. they predate everything. they will outlast everything.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- NeighborhoodWatch_103AD reply -->
+<div class="comment reply">
+  <div class="avatar small">N</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">NeighborhoodWatch_103AD</span><span class="timestamp">17 minutes ago</span></div>
+    <div class="comment-text">I want a full translation of that argument. I want a classicist to lip read it. I believe it is completely and entirely applicable to modern life.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- JustANormalViewer — top level -->
+<div class="comment">
+  <div class="avatar">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">JustANormalViewer</span><span class="timestamp">28 minutes ago</span></div>
+    <div class="comment-text">okay I need everyone to pause at timestamp 52:14.<br><br>there is a man walking with his wife.<br><br>and his wife is absolutely stunning. like genuinely. like she would be stunning by any standard in any era. I don't know who she is. I don't know her name. she has been gone for two thousand years. and she was beautiful.<br><br>I'm sorry. I had to say it.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>1,247,893</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- I also choose replies -->
+<div class="comment reply">
+  <div class="avatar small">U</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">UrbanWalker_Felix</span><span class="timestamp">25 minutes ago</span></div>
+    <div class="comment-text">I also choose this guy's wife</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>456,700</div>
+    </div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PavementPodcast</span><span class="timestamp">23 minutes ago</span></div>
+    <div class="comment-text">I also choose this guy's wife</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>389,400</div>
+    </div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small">O</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">OnFootEurope</span><span class="timestamp">21 minutes ago</span></div>
+    <div class="comment-text">I also choose this guy's wife</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>412,300</div>
+    </div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small">W</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">WalkingWithClara</span><span class="timestamp">19 minutes ago</span></div>
+    <div class="comment-text">I also choose this guy's wife</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>378,900</div>
+    </div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CityRhythms_Channel</span><span class="timestamp">17 minutes ago</span></div>
+    <div class="comment-text">I also choose this guy's wife</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>401,200</div>
+    </div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small">A</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ArchitectureNerd_Lena</span><span class="timestamp">15 minutes ago</span></div>
+    <div class="comment-text">I also choose this guy's wife</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>367,800</div>
+    </div>
+  </div>
+</div>
+
+<div class="comment reply">
+  <div class="avatar small">M</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ModernRomeWalker</span><span class="timestamp">13 minutes ago</span></div>
+    <div class="comment-text">I also choose this guy's wife</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>445,600</div>
+    </div>
+  </div>
+</div>
+
+<!-- GraffitiSpotter reply -->
+<div class="comment reply">
+  <div class="avatar small">G</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">GraffitiSpotter</span><span class="timestamp">11 minutes ago</span></div>
+    <div class="comment-text">somewhere on a wall in 103 AD someone already carved: I also choose this guy's wife</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>423,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- JustANormalViewer reply -->
+<div class="comment reply">
+  <div class="avatar small">J</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">JustANormalViewer</span><span class="timestamp">9 minutes ago</span></div>
+    <div class="comment-text">I did not expect this response but I completely understand it</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>534,200</div>
+    </div>
+  </div>
+</div>
+
+<!-- PavementPodcast — crowd top level -->
+<div class="comment">
+  <div class="avatar">P</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PavementPodcast</span><span class="timestamp">31 minutes ago</span></div>
+    <div class="comment-text">I need to say something serious for a second in between all the choosing of this guy's wife.<br><br>The crowd. The sheer number of people. Rome in 103 AD had somewhere between one and two million people. That's more than most modern European capitals. And you feel it in this video. The density of it. The way the streets are never empty. The way there is always someone in the background. Always someone coming around the corner. Always someone in a window.<br><br>A living city. A full living city. Two thousand years ago.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,900</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- ColorOfRome reply -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ColorOfRome</span><span class="timestamp">28 minutes ago</span></div>
+    <div class="comment-text">the density changes everything. I had imagined it as emptier somehow. more monumental. more space between things. it's the opposite. it's packed. it's alive in a way that the ruins can never suggest.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>56,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- ModernRomeWalker reply -->
+<div class="comment reply">
+  <div class="avatar small">M</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ModernRomeWalker</span><span class="timestamp">25 minutes ago</span></div>
+    <div class="comment-text">I walk through the ruins and they feel empty. silent. they are empty and silent. this is what they were full of. this is what the silence replaced.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- QuietStreetsFan — top level -->
+<div class="comment">
+  <div class="avatar">Q</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">QuietStreetsFan</span><span class="timestamp">34 minutes ago</span></div>
+    <div class="comment-text">the couple at around 44 minutes. walking together. not talking. just walking next to each other the way people walk next to each other when they've been together long enough that they don't need to fill the silence. in 103 AD. just two people walking next to each other in comfortable silence.<br><br>two thousand years and comfortable silence is still the same.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- UrbanWalker_Felix reply -->
+<div class="comment reply">
+  <div class="avatar small">U</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">UrbanWalker_Felix</span><span class="timestamp">31 minutes ago</span></div>
+    <div class="comment-text">that moment got me more than anything else in the video. more than the Forum. more than the Colosseum. two people walking in silence.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- ForumDaily reply -->
+<div class="comment reply">
+  <div class="avatar small">F</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">ForumDaily</span><span class="timestamp">28 minutes ago</span></div>
+    <div class="comment-text">the private human thing inside the enormous historical thing. a couple walking in silence in 103 AD. that's what two thousand years comes down to.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- CityRhythms_Channel — craft top level -->
+<div class="comment">
+  <div class="avatar">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CityRhythms_Channel</span><span class="timestamp">41 minutes ago</span></div>
+    <div class="comment-text">I make walking videos. I want to talk about the craft of this for a second.<br><br>The Forum approach. The full stop at the corner before moving forward. Letting the space arrive rather than rushing into it. That's Street Level's instinct and it's exactly right and watching it executed in ancient Rome with the Forum actually functioning — lawyers and merchants and citizens going about their Tuesday — I understood something about why I make these videos that I hadn't understood before.<br><br>You stop because the space deserves it. Because some places have earned the pause. The Forum earned it in 103 AD and the ruins earn it now and the pause is the same pause across two thousand years.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>56,700</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- WalkingWithClara reply -->
+<div class="comment reply">
+  <div class="avatar small">W</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">WalkingWithClara</span><span class="timestamp">38 minutes ago</span></div>
+    <div class="comment-text">the pause is the same pause. yes.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>45,600</div>
+    </div>
+  </div>
+</div>
+
+<!-- streetlevel — personal comment -->
+<div class="comment">
+  <div class="avatar" style="background:#cc0000;color:#fff;">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username streetlevel">streetlevel</span><span class="timestamp">44 minutes ago</span></div>
+    <div class="comment-text">I planned this walk from a research trip and a map I still don't fully understand how to explain.<br><br>I watched the finished footage alone in my apartment in Zurich and I didn't move for one hour and forty seven minutes.<br><br>The couple walking in silence at 44 minutes. I didn't plan that. That was just two people walking next to each other in 103 AD. I watched them and I thought about everyone I've ever walked next to in silence and I understood why I make these videos.<br><br>Thank you for watching it with me.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>189,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- THR AUDIENCE SECTION BREAK -->
+<div class="section-break"></div>
+<div class="section-label">The Historical Record audience arrives</div>
+
+<!-- stalechipdefender — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">2 hours ago</span></div>
+    <div class="comment-text">found this from a reddit post. watched the whole thing before I said anything.<br><br>the dice game. the child being dragged. the neighbors arguing. the graffiti about the upstairs neighbor.<br><br>he didn't find those people. Street Level did. Street Level planned this walk and Street Level's eye found those moments. which means something important.<br><br>you don't need the ability to see what matters. you just need to know how to look.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>234,500</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">1 hour 51 minutes ago</span></div>
+    <div class="comment-text">yeah</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>156,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- OldRomeNewTricks reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/OldRomeNewTricks.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">OldRomeNewTricks</span><span class="timestamp">1 hour 44 minutes ago</span></div>
+    <div class="comment-text">Street Level has been finding these moments in modern cities for two years. the old man outside the shop. the couple walking in silence. the neighbors arguing. they find them in zurich and milan and bern because that's how they see.<br><br>he recognized that. that's why he called them.<br><br>the ability gets you there. the eye is something else.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>178,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">1 hour 38 minutes ago</span></div>
+    <div class="comment-text">the ability gets you there. the eye is something else. that's it exactly.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>201,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 56 minutes ago</span></div>
+    <div class="comment-text">the old man sitting outside the shop in the sun.<br><br>I found this channel an hour ago through a comment on the Issus video. I don't know Street Level's other videos. But I know that whoever planned this walk put the camera in front of an old man sitting in the sun in 103 AD because that's where it belonged.<br><br>That's not an accident. That's someone who knows how to look.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>289,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CarolHineyMarsh reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CarolHineyMarsh.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CarolHineyMarsh</span><span class="timestamp">1 hour 43 minutes ago</span></div>
+    <div class="comment-text">I've been watching The Historical Record for three years. He has always found the person nobody else is looking at. This time he didn't find them. Street Level did. He recognized that in them and gave them somewhere impossible to look.<br><br>The old man in the sun. Elias in the cornfield. Demetrios on the beach. Different people, different centuries, same instinct. Know where to look and they're always there.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>198,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 34 minutes ago</span></div>
+    <div class="comment-text">I need to find Street Level's other videos.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>223,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- CornfieldGhost reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/CornfieldGhost.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CornfieldGhost</span><span class="timestamp">1 hour 28 minutes ago</span></div>
+    <div class="comment-text">start with Antietam. in order.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- SGT_Harlow_Ret — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/SGT_Harlow_Ret.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">SGT_Harlow_Ret</span><span class="timestamp">1 hour 48 minutes ago</span></div>
+    <div class="comment-text">timestamp 52:14. the man walking with his wife through the market. I'm not here for what everyone else in this comment section is here for at that timestamp.<br><br>I'm here for him. The way he moves through the crowd. The way he positions himself slightly between her and the busiest part of the street without thinking about it. Without her asking. Just automatically.<br><br>Two thousand years and men still do that. Walk slightly between the person they love and the thing that might be a problem. I've done it my whole life without ever deciding to do it.<br><br>That detail wasn't in any planning notes. Street Level didn't put that there. That was just a man in 103 AD walking with his wife. But Street Level's eye was moving slowly enough to catch it.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>167,800</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- stalechipdefender reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/stalechipdefender.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">stalechipdefender</span><span class="timestamp">1 hour 35 minutes ago</span></div>
+    <div class="comment-text">I didn't notice that. I went back. you're right. he does it twice.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>145,600</div>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 28 minutes ago</span></div>
+    <div class="comment-text">Oh.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>189,300</div>
+    </div>
+  </div>
+</div>
+
+<!-- WalkingWithClara reply -->
+<div class="comment reply">
+  <div class="avatar small">W</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">WalkingWithClara</span><span class="timestamp">1 hour 21 minutes ago</span></div>
+    <div class="comment-text">I came here for the comment everyone else came here for and I stayed for this one. this is the one.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- TemporalMechanics_PhD — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">1 hour 41 minutes ago</span></div>
+    <div class="comment-text">the density of the city. I've spent two years thinking about what it means that he can go places and see things. the physics of it. the mechanism. what it costs and how it works.<br><br>and today I watched a Tuesday morning in Rome in 103 AD and I stopped thinking about the physics entirely.<br><br>a million people. all of them alive. all of them going somewhere. all of them with somewhere to be and someone to argue with and a dice game to get back to.<br><br>the physics doesn't matter. this is what the physics is for.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>145,600</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- PhilosophyBro_Actually reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/PhilosophyBro_Actually.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">PhilosophyBro_Actually</span><span class="timestamp">1 hour 28 minutes ago</span></div>
+    <div class="comment-text">it took you two years and ancient Rome on a walking channel to stop thinking about the physics. that feels about right.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>178,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- TemporalMechanics reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/TemporalMechanics_PhD.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">TemporalMechanics_PhD</span><span class="timestamp">1 hour 21 minutes ago</span></div>
+    <div class="comment-text">it feels exactly right yes.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>156,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- VeteranTeacher_MrKowalski — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/VeteranTeacher_MrKowalski.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">VeteranTeacher_MrKowalski</span><span class="timestamp">1 hour 34 minutes ago</span></div>
+    <div class="comment-text">I showed my students the graffiti timestamp today. The complaint about the noisy upstairs neighbor. I asked them what they thought.<br><br>The boy raised his hand. He said: people haven't changed at all have they. I said no, not really. He thought about it and said: that's either very comforting or very frightening depending on which people you're thinking about.<br><br>Twenty two years. I am writing that down.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>112,300</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- just_jane_ok reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/just_jane_ok.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">just_jane_ok</span><span class="timestamp">1 hour 21 minutes ago</span></div>
+    <div class="comment-text">That boy.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>134,500</div>
+    </div>
+  </div>
+</div>
+
+<!-- MargaretFrom_Aberdeen reply -->
+<div class="comment reply">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/MargaretFrom_Aberdeen.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">MargaretFrom_Aberdeen</span><span class="timestamp">1 hour 14 minutes ago</span></div>
+    <div class="comment-text">Comforting or frightening depending on which people you're thinking about. Please tell him an old woman in Scotland thinks he just said something that will stay with people for a very long time.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>123,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- OnFootEurope — subscriber count top level -->
+<div class="comment">
+  <div class="avatar">O</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">OnFootEurope</span><span class="timestamp">1 hour 28 minutes ago</span></div>
+    <div class="comment-text">I have been watching the subscriber count on this channel for the last two hours.<br><br>Street Level had 47 thousand subscribers when I woke up this morning.<br><br>They currently have 340 thousand and it's still climbing.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- CityRhythms_Channel reply -->
+<div class="comment reply">
+  <div class="avatar small">C</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">CityRhythms_Channel</span><span class="timestamp">1 hour 14 minutes ago</span></div>
+    <div class="comment-text">I checked twenty minutes ago and it was 280 thousand. it's moving fast.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>67,800</div>
+    </div>
+  </div>
+</div>
+
+<!-- WalkWithMarta reply -->
+<div class="comment reply">
+  <div class="avatar small">W</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">WalkWithMarta</span><span class="timestamp">1 hour 1 minute ago</span></div>
+    <div class="comment-text">it's going to keep moving. the THR audience is enormous and they're all here now and they're all subscribing.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>56,700</div>
+    </div>
+  </div>
+</div>
+
+<!-- OnFootEurope reply -->
+<div class="comment reply">
+  <div class="avatar small">O</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">OnFootEurope</span><span class="timestamp">51 minutes ago</span></div>
+    <div class="comment-text">Street Level woke up this morning as a 47K channel and is going to go to sleep tonight as something completely different. I remain bitter and also completely happy for them.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>78,900</div>
+    </div>
+  </div>
+</div>
+
+<!-- DebunkDaily — top level -->
+<div class="comment">
+  <img src="https://justindball-bit.github.io/thr-appendix/avatars/DebunkDaily.png" style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username">DebunkDaily</span><span class="timestamp">1 hour 19 minutes ago</span></div>
+    <div class="comment-text">two years ago I made a video saying The Historical Record was fake. I was completely wrong. I have said this many times.<br><br>I want to add something to that today. Not only was I wrong about the channel being fake. I was wrong about the scale of what it would become. I thought it was an impressive hoax. It turned out to be the most significant thing on the internet.<br><br>And today it's in a 47K subscriber walking channel's comment section and the 47K subscriber walking channel deserved every single one of the subscribers they're about to receive.<br><br>The courtyard off the Kramgasse. Forty seconds. That's apparently all it takes to get noticed by the right person.<br><br>I need to go review my old footage.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>89,400</div>
+      <span class="action">Reply</span>
+    </div>
+  </div>
+</div>
+
+<!-- TheHistoricalRecord — final -->
+<div class="comment">
+  <div class="avatar" style="background:#e0e0e0;"></div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username thr">TheHistoricalRecord</span><span class="timestamp">47 minutes ago</span></div>
+    <div class="comment-text">Two thousand years. Same dice game. Same argument from the window. Same child who doesn't want to go.<br><br>Thank you @streetlevel for helping me show that.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>6,789,400</div>
+    </div>
+  </div>
+</div>
+
+<!-- streetlevel final reply -->
+<div class="comment">
+  <div class="avatar" style="background:#cc0000;color:#fff;">S</div>
+  <div class="comment-body">
+    <div class="comment-meta"><span class="username streetlevel">streetlevel</span><span class="timestamp">44 minutes ago</span></div>
+    <div class="comment-text">I don't have words for that.<br><br>I'm going to go for a walk.</div>
+    <div class="comment-actions">
+      <div class="action"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>1,234,500</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
